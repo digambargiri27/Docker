@@ -1,0 +1,287 @@
+admin@pc4 project]$ history 
+    1  uname -ar
+    2  curl -fssl http://get.docker.com -o - |bash
+    3  curl -fssl http://get.docker.com -o - | bash
+    4  curl -fsSL http://get.docker.com -o - | bash
+    5  docker -ps
+    6  docker ps
+    7  docker
+    8  docker ps
+    9  sudo curl -fsSL http://get.docker.com -o - | bash
+   10  sudo curl -fsSL https://get.docker.com -o - | bash
+   11  docker ps
+   12  usermod -aG docker $USER
+   13  sudo usermod -aG docker $USER
+   14  docker ps
+   15  sudo systemctl enable -now docker
+   16  sudo systemctl enable --now docker
+   17  docker ps
+   18  newgrp docker
+   19  docker ps
+   20  man docker
+   21  docker run busybox
+   22  docker images
+   23  find /var -i name busybox*
+   24  sudo find /var -i name busybox*
+   25  sudo find /var -iname busybox*
+   26  cd /var/lib/docker/
+   27  ls -lt
+   28  ls -l
+   29  sudo ls -l
+   30  cd overlay2
+   31  cd~
+   32  cd ~
+   33  docker run -it nginx:latest -p 80:80
+   34  docker run -it -p 80:80 nginx:latest
+   35  --name nginx
+   36  docker run -it -p 80:80 --name nginx nginx:latest
+   37  docker stop nginx
+   38  sudo docker stop nginx
+   39  docker ps
+   40  sudo docker ps
+   41  docker exec -it 710b92d7ca53 /bin/sh
+   42  sudo docker exec -it 710b92d7ca53 /bin/sh
+   43  sudo docker exec -it 710b92d7ca53 /bash/sh
+   44  apt-install pstool
+   45  apt install pstool
+   46  apt install ps tool
+   47  sudo docker exec -it 710b92d7ca53 /bash/sh
+   48  sudo docker exec -it 710b92d7ca53 /bin/sh
+   49  docker ps
+   50  sudo docker ps
+   51  docker
+   52  imagesimportpull
+   53  docker info
+   54  dockerinfo
+   55  docker docker info
+   56  docker info
+   57  sudo su
+   58  docker ps
+   59  FROM httpd:2.4
+   60  docker build -t my-apache2 .
+   61  docker build -t my-apache2
+   62  sudo su
+   63  docker info
+   64  docker env docket-test
+   65  docker ps
+   66  docker info
+   67  docker-machine 
+   68  docker-machine create 
+   69  docker-machine create -d 
+   70  docker-machine create -d virtualbox machine1
+   71  base=https://github.com/docker/machine/releases/download/v0.16.0 &&   curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&   sudo mv /tmp/docker-machine /usr/local/bin/docker-machine &&
+   72  init 0
+   73  docker-machine ls
+   74  docker-machine start machine1
+   75  docker-machine start machine2
+   76  docker-machine ls
+   77  docker-machine start docker-test
+   78  docker --version
+   79  docker 
+   80  docker ps
+   81  docker-machine ps
+   82  docker-machine ls
+   83  docker-machine 
+   84  docker-machine rm 
+   85  docker-machine rm machine1machine1
+   86  docker-machine rm machine1
+   87  docker-machine ps
+   88  docker-machine ls
+   89  docker ps
+   90  docker log
+   91  docker history
+   92  docker top
+   93  docker info
+   94  docker inspect 
+   95  docker ps -a
+   96  docker ps a
+   97  docker ps -a
+   98  docker inspect af4c29b48ed9
+   99  docker network ls
+  100  docker stats
+  101  docker inspect af4c29b48ed9
+  102  docket network ls
+  103  docker network ls
+  104  docker inspect 3dca5dcbac8d
+  105  docker inspect d4e970317557
+  106  docker inspect 3a72e1741a42
+  107  docker images
+  108  docker pull jumanjiman/tftp-hpa:latest
+  109  docker images
+  110  docker run -d -p 80:82 --name TFTP  jumanjiman/tftp-hpa:latest 
+  111  docker ps
+  112  docker-machine ls
+  113  docker-machine create -d virtualbox testmachine1
+  114  docker-machine ls
+  115  docker-machine ssh testmachine1
+  116  eval $(docker-machine env testmachine1)
+  117  docker info
+  118  docker info |grep Name
+  119  docker-machine eval testmachine1
+  120  history
+  121  history | grep ev
+  122  docker run -d -p 80:80 --name httpd httpd:latest
+  123  docker-machine ls
+  124  docker exec -it httpd /bin/bash
+  125  docker commit httpd
+  126  docker images
+  127  docker-machine ssh testmachine1
+  128  docker login -u Student -p Student123 http://pc31
+  129  sudo vi /etc/host
+  130  sudo vi /etc/hosts
+  131  docker login -u Student -p Student123 http://pc31
+  132  eval $(docker-machine env testmachine1)
+  133  docker info
+  134  docker login -u Student -p Student123 http://pc31
+  135  docker-machine ps
+  136  docker-machine ls
+  137  docker-machine ssh testmachine1
+  138  eval $(docker-machine env testmachine1)
+  139  docker info
+  140  vi /etc/hosts
+  141  docker login -u Student -p Student123 http://pc31
+  142  sudo docker login -u Student -p Student123 http://pc31
+  143  docker login -u Student -p Student123 http://pc31
+  144  docker-machine ssh testmachine1
+  145  eval $(docker-machine env testmachine1)
+  146  docker info
+  147  docker login -u Student -p Student123 http://pc31
+  148  vi /stc/hosts
+  149  vi /etc/hosts
+  150  sudo vi /etc/hosts
+  151  docker-machine ssh testmachine1
+  152  eval $(docker-machine env testmachine1)
+  153  docker info
+  154  docker login -u Student -p Student123 http://pc31
+  155  docker ps
+  156  docker run -d -p  80:80 --name httpd httpd:latest
+  157  docker run -d -p  80:80 --name httpdd httpd:latest
+  158  docker exec -it httpdd /bin/bash
+  159  docker commit httpdd
+  160  docker imags
+  161  docker images
+  162  docker 
+  163  docker images
+  164  docker rmi 42763ebfcce2
+  165  docker images
+  166  docker rmi a4313731a3c4
+  167  docker images
+  168  docker-machine ls
+  169  eval $(docker-machine env testmachine1)
+  170  docker info
+  171  docker login -u Student -p Student123 http://pc31
+  172  docker exec -it httpd /bin/bash
+  173  docker ps
+  174  docker rmi 7bb306530423
+  175  docker images
+  176  docker rmi d4a061d58465
+  177  docker exec -it httpd /bin/bash
+  178  docker exec -it httpdd /bin/bash
+  179  docker commit httpdd
+  180  docker images
+  181  docker exec -it httpd /bin/bash
+  182  docker exec -it httpdd /bin/bash
+  183  docker commit httpdd
+  184  docker images
+  185  docker rmi 554d75c56666
+  186  docker images
+  187  docker login - Student -p Student123 http://192.168.152.127
+  188  docker login -u Student -p Student123 http://192.168.152.127
+  189  docker images
+  190  docker tag 0ac7f822eed1 192.168.152.127/digambar/httpd-custom:latest
+  191  docker login -u Student -p Student123 http://192.168.152.127
+  192  docker push 192.168.152.127/digambar/httpd-custom:latest
+  193  docker ps
+  194  docker rmi httpdd
+  195  docker images
+  196  docker rmi 0ac7f822eed1
+  197  docker rmi d4a061d58465
+  198  docker images
+  199  docker rm -f $(docker ps -a | awk 'NR>1 {print $1}')
+  200  docker rmi 7bb306530423
+  201  docker ps -a
+  202  docker login -u Student -p Student123 http://192.168.152.127
+  203  docker run -d -p 80:80 192.168.152.127/digambar/httpd-custom:latest
+  204  docker run -d -p 80:80 192.168.152.127/digambar/httpdd-custom:latest
+  205  docker run -d -p 80:80 192.168.152.127/digambar/httpd-custom:latest
+  206  docker images
+  207  dokcer
+  208  docker
+  209  docker images
+  210  docker rmi 0ac7f822eed1
+  211  docker ps
+  212  docker rm 192.168.152.127/digambar/httpd-custom:latest
+  213  docker rm 192.168.152.127/digambar/httpd-custom
+  214  docker rm 3e9263f75e6c
+  215  docker stop 3e9263f75e6c
+  216  docker rm 3e9263f75e6c
+  217  docker images
+  218  docker rmi 0ac7f822eed1
+  219  docker rmi d4a061d58465
+  220  docker images
+  221  docker ps
+  222  docker ps -a
+  223  docker stop e9fcbfe10e12
+  224  dokcer rm e9fcbfe10e12
+  225  docker rm e9fcbfe10e12
+  226  docker ps -a
+  227  docker images
+  228  docker rmi 0ac7f822eed1
+  229  dokcer ps -a
+  230  docker ps -a
+  231  docker images
+  232  docker push -d -p 80:80 192.168.152.127/digambar/httpd-custom:latest
+  233  docker run -d -p 80:80 192.168.152.127/digambar/httpd-custom:latest
+  234  docker ps -a
+  235  docker images
+  236  history
+  237  ls 
+  238  cd
+  239  pwd
+  240  mkdir -p project
+  241  cd project
+  242  vi Dockerfile
+  243  ls
+  244  cat Dockerfile 
+  245  vi index.html
+  246  cat index.html 
+  247  vi index.html
+  248  cat index.html 
+  249  docker ps -a
+  250  docker images
+  251  docket stop 0b7c2e4a50f3
+  252  docker stop 0b7c2e4a50f3
+  253  docker rm 0b7c2e4a50f3
+  254  docker images
+  255  docker rmi 0ac7f822eed1
+  256  docker images
+  257  docker ps -a
+  258  eval $(docker-machine env testmachine1)
+  259  docker build -t docker-centos7 .
+  260  docker tag docker-centos7:latest 192.168.152.127/digambar/centos-httpd:v4
+  261  docker push 192.168.152.127/digambar/centos7-httpd:v4
+  262  docker ps
+  263  docker images
+  264  docker push 192.168.152.127/digambar/centos-httpd:v4
+  265  docker run -d -p 80:80 --name testhttpd 192.168.152.127/digambar/centos-httpd:v4
+  266  docker images
+  267  docker ps
+  268  docker ps -a
+  269  dokcer stop 41d1f43f3d96
+  270  docker rm 41d1f43f3d96
+  271  docker stop 192.168.152.127/digambar/centos-httpd:v4
+  272  docker stop 41d1f43f3d96
+  273  docker rm 41d1f43f3d96
+  274  docker images
+  275  docker rmi 950e2770350b
+  276  docker ps -a
+  277  docker rmi -f 950e2770350b
+  278  docker images
+  279  docker rmi -f 5e35e350aded
+  280  docker images
+  281  docker ps -a
+  282  docker run -d -p 80:80 --name testhttpd 192.168.152.127/digambar/centos-httpd:v4
+  283  history
+  284  cat Dockerfile 
+  285  cat index.html 
+  286  history
