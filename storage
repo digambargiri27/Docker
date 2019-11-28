@@ -11,3 +11,27 @@ Drivers
 docker run -d -p 80:80 -v /home/admin/test:/usr/share/httpd/noindex --name testhttpd 192.168.152.127/digambar/centos-httpd:v4
 
 docker ps -a |awk 'NR>1' {print $1})
+
+
+335  docker rm -f $(docker ps -a |awk 'NR>1 {print $1}')
+  336  docker iamge prune -a -f
+  337  docker image prune -a -f
+  338  mkdir -p ~/test
+  339  cd ~/test
+  340  vi index.html
+  341  docker ps -a
+  342  docker iamges
+  343  docker images
+  344  docker login -u Student -p Student123 http://192.168.152.127
+  345  docker run -d -p 80:80 -v /homeadmin/test:/usr/share/httpd/noindex --name testhttpd 192.168.152.127/digambar/centso7-httpd:v4
+  346  docker run -d -p 80:80 -v /home/admin/test:/usr/share/httpd/noindex --name testhttpd 192.168.152.127/digambar/centos7-httpd:v4
+  347  docker ps
+  348  docker ps -a
+  349  docker run -d -p 80:80 --name testhttpd 192.168.152.127/digambar/centos7-httpd:v4
+  350* docker run -d -p 80:80 --name testhttpd 192.168.152.127/digambar/centos7-https:v4
+  351  docker run -d -p 80:80 -v /home/admin/test:/usr/share/httpd/noindex --name testhttpd 192.168.152.127/digambar/centos7-https:v4
+  352  docker ps -a
+  353  docker run -d -p 80:80 -v /home/admin/test:/usr/share/httpd/noindex --name testhttpd 192.168.152.127/digambar/centos7-https:v4
+  354  history 
+[admin@pc4 test]$ 
+
