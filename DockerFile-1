@@ -56,7 +56,31 @@ admin@pc4 project]$ history
    55  docker docker info
    56  docker info
    57  sudo su
-   58  docker ps
+   58  docker psadmin@pc4 project]$ cat Dockerfile
+FROM centos:centos7
+RUN yum update -y &&\
+    yum install httpd -y &&\
+    yum clean all
+ADD ./index.html /usr/share/httpd/noindex
+EXPOSE 80
+CMD ["apachectl", "-D", "FOREGROUND"]
+
+[admin@pc4 project]$ cat index.html
+<h1> THIS IS A EXAMPLE VIA DOCKERFILE </h1>
+[admin@pc4 project]$ 
+admin@pc4 project]$ cat Dockerfile
+FROM centos:centos7
+RUN yum update -y &&\
+    yum install httpd -y &&\
+    yum clean all
+ADD ./index.html /usr/share/httpd/noindex
+EXPOSE 80
+CMD ["apachectl", "-D", "FOREGROUND"]
+
+[admin@pc4 project]$ cat index.html
+<h1> THIS IS A EXAMPLE VIA DOCKERFILE </h1>
+[admin@pc4 project]$ 
+
    59  FROM httpd:2.4
    60  docker build -t my-apache2 .
    61  docker build -t my-apache2
@@ -285,3 +309,29 @@ admin@pc4 project]$ history
   284  cat Dockerfile 
   285  cat index.html 
   286  history
+  
+  
+  admin@pc4 project]$ cat Dockerfile
+FROM centos:centos7
+RUN yum update -y &&\
+    yum install httpd -y &&\
+    yum clean all
+ADD ./index.html /usr/share/httpd/noindex
+EXPOSE 80
+CMD ["apachectl", "-D", "FOREGROUND"]
+
+[admin@pc4 project]$ cat index.html
+<h1> THIS IS A EXAMPLE VIA DOCKERFILE </h1>
+[admin@pc4 project]$ 
+
+
+[admin@pc4 project]$ pwd
+/home/admin/project
+[admin@pc4 project]$ 
+
+[admin@pc4 project]$ ls -l
+total 8
+-rw-rw-r--. 1 admin admin 180 Nov 28 09:36 Dockerfile
+-rw-rw-r--. 1 admin admin  44 Nov 28 09:37 index.html
+[admin@pc4 project]$ 
+
