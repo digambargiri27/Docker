@@ -7,3 +7,7 @@ Drivers
   oss
   gcs
 
+
+docker run -d -p 80:80 -v /home/admin/test:/usr/share/httpd/noindex --name testhttpd 192.168.152.127/digambar/centos-httpd:v4
+
+docker ps -a |awk 'NR>1' {print $1})
