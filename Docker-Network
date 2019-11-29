@@ -88,10 +88,49 @@ docker info
 docker 
 docker network ls
 eval $(docker-machine env master-0)
-docker node ls
+docker node ls1051  docker service create --name httpd-custom --publish target=80,published=80 --mode global --with-registry-auth --constraint "node.role==worker" --network dockerlab 192.168.152.127/syedab/centos7-httpd:v4
+ 1052  docker service ps
+ 1053  docker service ls
+ 1054  docker ps 
+ 1055  docker network ls
+ 1056  docker |grep Name
+ 1057  docker info |grep Name
+ 1058  eval $(docker-machine env worker-0)1051  docker service create --name httpd-custom --publish target=80,published=80 --mode global --with-registry-auth --constraint "node.role==worker" --network dockerlab 192.168.152.127/syedab/centos7-httpd:v4
+ 1052  docker service ps
+ 1053  docker service ls
+ 1054  docker ps 
+ 1055  docker network ls
+ 1056  docker |grep Name
+ 1057  docker info |grep Name
+ 1058  eval $(docker-machine env worker-0)
+ 1059  docker info |grep Name
+ 1060  docker network ls
+ 1061  docker images
+ 1062  docker-amchine ls
+ 1063  docker-machine ls
+ 1059  docker info |grep Name
+ 1060  docker network ls
+ 1061  docker images
+ 1062  docker-amchine ls
+ 1063  docker-machine ls
 
 
 
 docker service create --name httpd-custom --publish target=80,published=80 --network dockerlab 192.168.152.127/digambar/centos7-https:v4
 
 docker service create --name httpd-custom --publish target=80,published=80 --constraint "node.role==worker" --network dockerlab 192.168.152.127/digambar/centos07-https:v4
+
+
+1051  docker service create --name httpd-custom --publish target=80,published=80 --mode global --with-registry-auth --constraint "node.role==worker" --network dockerlab 192.168.152.127/syedab/centos7-httpd:v4
+ 1052  docker service ps
+ 1053  docker service ls
+ 1054  docker ps 
+ 1055  docker network ls
+ 1056  docker |grep Name
+ 1057  docker info |grep Name
+ 1058  eval $(docker-machine env worker-0)
+ 1059  docker info |grep Name
+ 1060  docker network ls
+ 1061  docker images
+ 1062  docker-amchine ls
+ 1063  docker-machine ls
