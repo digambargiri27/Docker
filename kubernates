@@ -1,0 +1,8 @@
+Minikube
+kops
+kubespray
+Heml - Package Manager
+  V2 - Tiller on kubernetes cluster
+  v3 - No tiller
+Kustomize - just like helm
+  kubectl create -k <pas the kustomize folder>
