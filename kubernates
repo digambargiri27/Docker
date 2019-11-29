@@ -1,8 +1,11 @@
-Minikube
-kops
-kubespray
+Minikube - Local testing
+kops - Cloud deployment (AWS , GCP)
+kubespray - Ansible Playbook
 Heml - Package Manager
   V2 - Tiller on kubernetes cluster
   v3 - No tiller
 Kustomize - just like helm
   kubectl create -k <pas the kustomize folder>
+CLI - kubectl
+    - kubeadm - to install k8s
+
