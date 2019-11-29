@@ -1,0 +1,2152 @@
+# Install Docker
+sudo curl -fsSL http://get.docker.com -o - | bashtime && dokcer run -t -p 
+
+sudo systemctl enable --now docker
+newgrp docker
+sudo systemctl enable --now docker
+docker run busybox
+#Run the ngix in docker
+docker run -it nginx:latest -p 80:80
+docker run -it -p 80:80 --name nginx nginx:latest
+dokcer run -d -p 80:80 --name nginx nginx:latestdocker login -u Student -p Student123 http://192.168.152.127
+docker ps -atime && dokcer run -t -p 
+
+docker ps -a | awk 'NR>1 {print $1}'
+docker start ngixdocker-machine create -d virtualbox machine2
+docker stop nginx---------------------------------------------------------------------
+docker rm -f $(docker ps -a | awk 'NR>1 {print $1}')
+apt-get 
+docker network ls
+dokcer stop nginxtime && dokcer run -t -p [admin@pc4 ~]$ docker-machine create -d virtualbox testmachine1
+Running pre-create checks...
+Creating machine...
+(testmachine1) Copying /home/admin/.docker/machine/cache/boot2docker.iso to /home/admin/.docker/machine/machines/testmachine1/boot2docker.iso...
+(testmachine1) Creating VirtualBox VM...
+(testmachine1) Creating SSH key...
+(testmachine1) Starting the VM...
+(testmachine1) Check network to re-create if needed...
+(testmachine1) Waiting for an IP...
+Waiting for machine to be running, this may take a few minutes...
+Detecting operating system of created instance...
+Waiting for SSH to be available...
+Detecting the provisioner...
+Provisioning with boot2docker...
+Copying certs to the local machine directory...
+Copying certs to the remote machine...
+Setting Docker configuration on the remote daemon...
+Checking connection to Docker...
+Docker is up and running!
+To see how to connect your Docker Client to the Docker Engine running on this virtual machine, run: docker-machine env testmachine1
+[admin@pc4 ~]$ docker-machine ls
+NAME           ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER     ERRORS
+testmachine1   -        virtualbox   Running   tcp://192.168.99.100:2376           v19.03.5   
+[admin@pc4 ~]$ docker-machine ssh testmachine1
+   ( '>')
+  /) TC (\   Core is distributed with ABSOLUTELY NO WARRANTY.
+ (/-_--_-\)           www.tinycorelinux.net
+
+docker@testmachine1:~$ sudo su -
+root@testmachine1:~# vi /etc/docker/deamon.json
+root@testmachine1:~#                                                            root@testmachine1:~# systemctl restart docker
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            root@testmachine1:~# systemctl restart docker
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            root@testmachine1:~#           
+root@testmachine1:~# /etc/init.d/docker restart
+Stopping dockerd (2618)
+Starting dockerd
+root@testmachine1:~#                                                            root@testmachine1:~# exit      
+logout
+docker@testmachine1:~$                                                          docker@testmachine1:~$ exit    
+logout
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+
+
+docker ps -a
+docker rm -f $(docker ps -a | awk'NR>1 {print $1}')
+docker image prune -af # delete all the images fromt he docker.
+
+------------------------
+docker info
+---------------------------
+docker image prune
+docker run -it -p 80:80 --name ngix nginx:latest
+docker exec -it <container ID>   61  docker-machine create -d virtualbox dokcet_test
+   62  base=https://github.com/docker/machine/releases/download/v0.16.0 &&   curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&   sudo mv /tmp/docker-machine /usr/local/bin/docker-machine &&   chmod +x /usr/local/bin/docker-machi[admin@pc4 ~]$ docker-machine create -d virtualbox testmachine1
+Running pre-create checks...
+Creating machine...
+(testmachine1) Copying /home/admin/.docker/machine/cache/boot2docker.iso to /home/admin/.docker/machine/machines/testmachine1/boot2docker.iso...
+(testmachine1) Creating VirtualBox VM...
+(testmachine1) Creating SSH key...
+(testmachine1) Starting the VM...
+(testmachine1) Check network to re-create if needed...
+(testmachine1) Waiting for an IP...
+Waiting for machine to be running, this may take a few minutes...
+Detecting operating system of created instance...
+Waiting for SSH to be available...
+Detecting the provisioner...
+Provisioning with boot2docker...
+Copying certs to the local machine directory...
+Copying certs to the remote machine...
+Setting Docker configuration on the remote daemon...
+Checking connection to Docker...
+Docker is up and running!
+To see how to connect your Docker Client to the Docker Engine running on this virtual machine, run: docker-machine env testmachine1
+[admin@pc4 ~]$ docker-machine ls
+NAME           ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER     ERRORS
+testmachine1   -        virtualbox   Running   tcp://192.168.99.100:2376           v19.03.5   
+[admin@pc4 ~]$ docker-machine ssh testmachine1
+   ( '>')
+  /) TC (\   Core is distributed with ABSOLUTELY NO WARRANTY.
+ (/-_--_-\)           www.tinycorelinux.net
+
+docker@testmachine1:~$ sudo su -
+root@testmachine1:~# vi /etc/docker/deamon.json
+root@testmachine1:~#                                                            root@testmachine1:~# systemctl restart docker
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            root@testmachine1:~# systemctl restart docker
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            root@testmachine1:~#           
+root@testmachine1:~# /etc/init.d/docker restart
+Stopping dockerd (2618)
+Starting dockerd
+root@testmachine1:~#                                                            root@testmachine1:~# exit      
+logout
+docker@testmachine1:~$                                                          docker@testmachine1:~$ exit    
+logout
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+ne
+   63  docker-machine create -d virtualbox docker_test
+   64  base=https://github.com/docker/machine/releases/download/v0.16.0[root@pc4 admin]# eval $(docker-machine env machine1)
+[root@pc4 admin]# docker info
+
+   65  curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine
+   66  sudo mv /tmp/docker-machine /usr/local/bin/docker-machine
+   67  chmod +x /usr/local/bin/docker-machine
+   68  docker-machine create -d virtualbox docker_test
+   69  vi ~/.bashrc
+   70  vi ~/.bashrc
+   71  docker-machine create -d virtualbox docker_test
+   72  vi ~/.bashrc
+   73  . ~/.bashrc 
+   74  docker-machine create -d virtualbox docker_test
+   75  docker-machine create -d virtualbox docker-test
+   76  docker ps
+   77  docker-machine
+   78* docker-machine 
+   79  docker-machine ls
+   80  docker-machine env docker-test
+   81  vi ~/.bashrc
+   82  ssh 172.20.20.15 2375
+   83  ssh admin@172.20.20.150 2375
+   84  dockerd
+   85  docker-machine ls
+   86  history 
+[root@pc4 admin]# 
+bin/sh OR /bin/bash
+apt-get update
+
+
+docker search apache # search apache 
+docker inspect <container ID>
+docker start nginxCONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+
+docker network ls
+
+
+base=https://github.com/docker/machine/releases/download/v0.16.0
+curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine
+sudo mv /tmp/docker-machine /usr/local/bin/docker-machine
+chmod +x /usr/local/bin/docker-machine
+
+https://hub.docker.com/_/httpd
+
+https://docs.docker.com/machine/install-machine/
+
+  61  docker-machine create -d virtualbox dokcet_test
+   62  base=https://github.com/docker/machine/releases/download/v0.16.0 &&   curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&   sudo mv /tmp/docker-machine /usr/local/bin/docker-machine &&   chmod +x /usr/local/bin/docker-machine
+   63  docker-machine create -d virtualbox docker_test
+   64  base=https://github.com/docker/machine/releases/download/v0.16.0
+   65  curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine
+   66  sudo mv /tmp/docker-machine /usr/local/bin/docker-machine
+   67  chmod +x /usr/local/bin/docker-machine
+   68  docker-machine create -d virtualbox docker_test
+   69  vi ~/.bashrc
+   70  vi ~/.bashrc
+   71  docker-machine create -d virtualbox docker_test
+   72  vi ~/.bashrc
+   73  . ~/.bashrc 
+   74  docker-machine create -d virtualbox docker_test
+   75  docker-machine create -d virtualbox docker-test
+   76  docker ps
+   77  docker-machine
+   78* docker-machine 
+   79  docker-machine ls
+   80  docker-machine env docker-test
+   81  vi ~/.bashrc
+   82  ssh 172.20.20.15 2375
+   83  ssh admin@172.20.20.150 2375
+   84  dockerd
+   85  docker-machine ls
+   86  history 
+[root@pc4 admin]# 
+docker-machine ls
+docker-machine create -d virtualbox machine1
+docker-machine create -d virtualbox machine2
+
+[root@pc4 admin]# eval $(docker-machine env machine1)
+[root@pc4 admin]# docker info
+
+root@pc4 admin]# docker-machine ls
+NAME          ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER     ERRORS
+docker-test   -        virtualbox   Running   tcp://192.168.99.100:2376           v19.03.5   
+machine1      -        virtualbox   Running   tcp://192.168.99.103:2376           v19.03.5   
+machine2      *        virtualbox   Running   tcp://192.168.99.102:2376           v19.03.5   
+[root@pc4 admin]# docker-machine stop machine2
+Stopping "machine2"...
+Machine "machine2" was stopped.
+[root@pc4 admin]# 
+[root@pc4 admin]# 
+[root@pc4 admin]# docker-machine ls
+NAME          ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER     ERRORS
+docker-test   -        virtualbox   Running   tcp://192.168.99.100:2376           v19.03.5   
+machine1      -        virtualbox   Running   tcp://192.168.99.103:2376           v19.03.5   
+machine2      -        virtualbox   Stopped                                       Unknown    
+[root@pc4 admin]# 
+[root@pc4 admin]# 
+
+
+------------------------------------------
+docker run -d -p 80:80 --name httpd httpd:latest
+docker exec -it httpd /bin/bash
+
+
+125  docker info
+  126  docker ps
+  127  docker-machine ls
+  128  docker exec -it httpd /bin/bash
+  129  docker commit httpd
+  130  docker image
+  131  docker images
+  132  docker save ef7e3f926acb > httpd.tgz
+  133  docker exec -it httpd /bin/bash
+  134  docker commit httpd
+  135  docker-machine ps
+  136  docker-machine ls
+  137  docker images
+  138  docker save 32ec26c610c0 > httpd.tgz
+  139  docker stop httpd && docker rm -f $(docker ps -a |awk 'NR>1 {print $1}')
+  140  docker rmi $(docker images |awk 'NR>1 {print $1}')
+  141  docker rmi 
+  142  docker images
+  143  docker rmi --hemlp
+  144  docker rmi --help
+  145  docker rmi 32ec26c610c0
+  146  docker rmi ef7e3f926acbdocker run -d -p 80:8docker run -d -p 80:80 --name httpd httpd:latest
+docker exec -it httpd /bin/bash0 --name httpd httpd:latest
+docker exec -it httpd /bin/bash
+  147  docker images
+  148  docker load < httpd.tgz
+  149  docker images
+  150  docker run -d -p 80:80 --name httpd 32ec26c610c0
+  151  history
+[root@pc4 admin]# 
+
+
+***********************************************************
+***********************************************************
+HArbor Registry - https://goharbor.io/
+# Install Docker
+sudo curl -fsSL http://get.docker.com -o - | bashtime && dokcer run -t -p 
+
+sudo systemctl enable --now docker
+newgrp docker
+sudo systemctl enable --now docker
+docker run busybox
+#Run the ngix in docker
+docker run -it nginx:latest -p 80:80
+docker run -it -p 80:80 --name nginx nginx:latest
+dokcer run -d -p 80:80 --name nginx nginx:latestdocker login -u Student -p Student123 http://192.168.152.127
+docker ps -atime && dokcer run -t -p 
+
+docker ps -a | awk 'NR>1 {print $1}'
+docker start ngixdocker-machine create -d virtualbox machine2
+docker stop nginx---------------------------------------------------------------------
+docker rm -f $(docker ps -a | awk 'NR>1 {print $1}')
+apt-get 
+docker network ls
+dokcer stop nginxtime && dokcer run -t -p [admin@pc4 ~]$ docker-machine create -d virtualbox testmachine1
+Running pre-create checks...
+Creating machine...
+(testmachine1) Copying /home/admin/.docker/machine/cache/boot2docker.iso to /home/admin/.docker/machine/machines/testmachine1/boot2docker.iso...
+(testmachine1) Creating VirtualBox VM...
+(testmachine1) Creating SSH key...
+(testmachine1) Starting the VM...
+(testmachine1) Check network to re-create if needed...
+(testmachine1) Waiting for an IP...
+Waiting for machine to be running, this may take a few minutes...
+Detecting operating system of created instance...
+Waiting for SSH to be available...
+Detecting the provisioner...
+Provisioning with boot2docker...
+Copying certs to the local machine directory...
+Copying certs to the remote machine...
+Setting Docker configuration on the remote daemon...
+Checking connection to Docker...
+Docker is up and running!
+To see how to connect your Docker Client to the Docker Engine running on this virtual machine, run: docker-machine env testmachine1
+[admin@pc4 ~]$ docker-machine ls
+NAME           ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER     ERRORS
+testmachine1   -        virtualbox   Running   tcp://192.168.99.100:2376           v19.03.5   
+[admin@pc4 ~]$ docker-machine ssh testmachine1
+   ( '>')
+  /) TC (\   Core is distributed with ABSOLUTELY NO WARRANTY.
+ (/-_--_-\)           www.tinycorelinux.net
+
+docker@testmachine1:~$ sudo su -
+root@testmachine1:~# vi /etc/docker/deamon.json
+root@testmachine1:~#                                                            root@testmachine1:~# systemctl restart docker
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            root@testmachine1:~# systemctl restart docker
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            root@testmachine1:~#           
+root@testmachine1:~# /etc/init.d/docker restart
+Stopping dockerd (2618)
+Starting dockerd
+root@testmachine1:~#                                                            root@testmachine1:~# exit      
+logout
+docker@testmachine1:~$                                                          docker@testmachine1:~$ exit    
+logout
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+
+
+docker ps -a
+docker rm -f $(docker ps -a | awk'NR>1 {print $1}')
+docker image prune -af # delete all the images fromt he docker.
+
+------------------------
+docker info
+---------------------------
+docker image prune
+docker run -it -p 80:80 --name ngix nginx:latest
+docker exec -it <container ID>   61  docker-machine create -d virtualbox dokcet_test
+   62  base=https://github.com/docker/machine/releases/download/v0.16.0 &&   curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&   sudo mv /tmp/docker-machine /usr/local/bin/docker-machine &&   chmod +x /usr/local/bin/docker-machi[admin@pc4 ~]$ docker-machine create -d virtualbox testmachine1
+Running pre-create checks...
+Creating machine...
+(testmachine1) Copying /home/admin/.docker/machine/cache/boot2docker.iso to /home/admin/.docker/machine/machines/testmachine1/boot2docker.iso...
+(testmachine1) Creating VirtualBox VM...
+(testmachine1) Creating SSH key...
+(testmachine1) Starting the VM...
+(testmachine1) Check network to re-create if needed...
+(testmachine1) Waiting for an IP...
+Waiting for machine to be running, this may take a few minutes...
+Detecting operating system of created instance...
+Waiting for SSH to be available...
+Detecting the provisioner...
+Provisioning with boot2docker...
+Copying certs to the local machine directory...
+Copying certs to the remote machine...
+Setting Docker configuration on the remote daemon...
+Checking connection to Docker...
+Docker is up and running!
+To see how to connect your Docker Client to the Docker Engine running on this virtual machine, run: docker-machine env testmachine1
+[admin@pc4 ~]$ docker-machine ls
+NAME           ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER     ERRORS
+testmachine1   -        virtualbox   Running   tcp://192.168.99.100:2376           v19.03.5   
+[admin@pc4 ~]$ docker-machine ssh testmachine1
+   ( '>')
+  /) TC (\   Core is distributed with ABSOLUTELY NO WARRANTY.
+ (/-_--_-\)           www.tinycorelinux.net
+
+docker@testmachine1:~$ sudo su -
+root@testmachine1:~# vi /etc/docker/deamon.json
+root@testmachine1:~#                                                            root@testmachine1:~# systemctl restart docker
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            root@testmachine1:~# systemctl restart docker
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            root@testmachine1:~#           
+root@testmachine1:~# /etc/init.d/docker restart
+Stopping dockerd (2618)
+Starting dockerd
+root@testmachine1:~#                                                            root@testmachine1:~# exit      
+logout
+docker@testmachine1:~$                                                          docker@testmachine1:~$ exit    
+logout
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+ne
+   63  docker-machine create -d virtualbox docker_test
+   64  base=https://github.com/docker/machine/releases/download/v0.16.0[root@pc4 admin]# eval $(docker-machine env machine1)
+[root@pc4 admin]# docker info
+
+   65  curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine
+   66  sudo mv /tmp/docker-machine /usr/local/bin/docker-machine
+   67  chmod +x /usr/local/bin/docker-machine
+   68  docker-machine create -d virtualbox docker_test
+   69  vi ~/.bashrc
+   70  vi ~/.bashrc
+   71  docker-machine create -d virtualbox docker_test
+   72  vi ~/.bashrc
+   73  . ~/.bashrc 
+   74  docker-machine create -d virtualbox docker_test
+   75  docker-machine create -d virtualbox docker-test
+   76  docker ps
+   77  docker-machine
+   78* docker-machine 
+   79  docker-machine ls
+   80  docker-machine env docker-test
+   81  vi ~/.bashrc
+   82  ssh 172.20.20.15 2375
+   83  ssh admin@172.20.20.150 2375
+   84  dockerd
+   85  docker-machine ls
+   86  history 
+[root@pc4 admin]# 
+bin/sh OR /bin/bash
+apt-get update
+
+
+docker search apache # search apache 
+docker inspect <container ID>
+docker start nginxCONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+
+docker network ls
+
+
+base=https://github.com/docker/machine/releases/download/v0.16.0
+curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine
+sudo mv /tmp/docker-machine /usr/local/bin/docker-machine
+chmod +x /usr/local/bin/docker-machine
+
+https://hub.docker.com/_/httpd
+
+https://docs.docker.com/machine/install-machine/
+
+  61  docker-machine create -d virtualbox dokcet_test
+   62  base=https://github.com/docker/machine/releases/download/v0.16.0 &&   curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&   sudo mv /tmp/docker-machine /usr/local/bin/docker-machine &&   chmod +x /usr/local/bin/docker-machine
+   63  docker-machine create -d virtualbox docker_test
+   64  base=https://github.com/docker/machine/releases/download/v0.16.0
+   65  curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine
+   66  sudo mv /tmp/docker-machine /usr/local/bin/docker-machine
+   67  chmod +x /usr/local/bin/docker-machine
+   68  docker-machine create -d virtualbox docker_test
+   69  vi ~/.bashrc
+   70  vi ~/.bashrc
+   71  docker-machine create -d virtualbox docker_test
+   72  vi ~/.bashrc
+   73  . ~/.bashrc 
+   74  docker-machine create -d virtualbox docker_test
+   75  docker-machine create -d virtualbox docker-test
+   76  docker ps
+   77  docker-machine
+   78* docker-machine 
+   79  docker-machine ls
+   80  docker-machine env docker-test
+   81  vi ~/.bashrc
+   82  ssh 172.20.20.15 2375
+   83  ssh admin@172.20.20.150 2375
+   84  dockerd
+   85  docker-machine ls
+   86  history 
+[root@pc4 admin]# 
+docker-machine ls
+docker-machine create -d virtualbox machine1
+docker-machine create -d virtualbox machine2
+
+[root@pc4 admin]# eval $(docker-machine env machine1)
+[root@pc4 admin]# docker info
+
+root@pc4 admin]# docker-machine ls
+NAME          ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER     ERRORS
+docker-test   -        virtualbox   Running   tcp://192.168.99.100:2376           v19.03.5   
+machine1      -        virtualbox   Running   tcp://192.168.99.103:2376           v19.03.5   
+machine2      *        virtualbox   Running   tcp://192.168.99.102:2376           v19.03.5   
+[root@pc4 admin]# docker-machine stop machine2
+Stopping "machine2"...
+Machine "machine2" was stopped.
+[root@pc4 admin]# 
+[root@pc4 admin]# 
+[root@pc4 admin]# docker-machine ls
+NAME          ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER     ERRORS
+docker-test   -        virtualbox   Running   tcp://192.168.99.100:2376           v19.03.5   
+machine1      -        virtualbox   Running   tcp://192.168.99.103:2376           v19.03.5   
+machine2      -        virtualbox   Stopped                                       Unknown    
+[root@pc4 admin]# 
+[root@pc4 admin]# 
+
+
+------------------------------------------
+docker run -d -p 80:80 --name httpd httpd:latest
+docker exec -it httpd /bin/bash
+
+
+125  docker info
+  126  docker ps
+  127  docker-machine ls
+  128  docker exec -it httpd /bin/bash
+  129  docker commit httpd
+  130  docker image
+  131  docker images
+  132  docker save ef7e3f926acb > httpd.tgz
+  133  docker exec -it httpd /bin/bash
+  134  docker commit httpd
+  135  docker-machine ps
+  136  docker-machine ls
+  137  docker images
+  138  docker save 32ec26c610c0 > httpd.tgz
+  139  docker stop httpd && docker rm -f $(docker ps -a |awk 'NR>1 {print $1}')
+  140  docker rmi $(docker images |awk 'NR>1 {print $1}')
+  141  docker rmi 
+  142  docker images
+  143  docker rmi --hemlp
+  144  docker rmi --help
+  145  docker rmi 32ec26c610c0
+  146  docker rmi ef7e3f926acbdocker run -d -p 80:8docker run -d -p 80:80 --name httpd httpd:latest
+docker exec -it httpd /bin/bash0 --name httpd httpd:latest
+docker exec -it httpd /bin/bash
+  147  docker images
+  148  docker load < httpd.tgz
+  149  docker images
+  150  docker run -d -p 80:80 --name httpd 32ec26c610c0
+  151  history
+[root@pc4 admin]# 
+
+
+***********************************************************
+***********************************************************
+HArbor Registry - https://goharbor.io/
+
+[admin@pc4 ~]$ docker-machidocker-machine create -d virtualbox testmachine1
+Running pre-create checks...
+Creating machine...docker-machine create -d virtualbox testmachine1 
+docker-machine ls 
+docker-machine ssh testmachine1 
+sudo su - 
+/etc/init.d/docker restart 
+exit 
+exit 
+(testmachine1) Copying /home/admin/.docker/machine/cache/boot2docker.iso to /home/admin/.docker/machine/machines/testmachine1/boot2docker.iso...
+(testmachine1) Creating VirtualBox VM...
+(testmachine1) Creating SSH key...
+(testmachine1) Starting the VM...
+(testmachine1) Check network to re-create if needed...
+(testmachine1) Waiting for an IP...
+Waiting for machine to be running, this may take a few minutes...
+Detecting operating system of created instance...
+Waiting for SSH to be available...
+Detecting the provisioner...
+Provisioning with boot2docker...
+Copying certs to the local machine directory...
+Copying certs to the remote machine...
+Setting Docker configuration on the remote daemon...
+Checking connection to Docker...
+Docker is up and running!
+To see how to connect your Docker Client to the Docker Engine running on this virtual machine, run: docker-machine env testmachine1
+[admin@pc4 ~]$ docker-machine ls
+NAME           ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER     ERRORS
+testmachine1   -        virtualbox   Running   tcp://192.168.99.100:2376           v19.03.5   
+[admin@pc4 ~]$ docker-machine ssh testmachine1
+   ( '>')
+  /) TC (\   Core is distributed with ABSOLUTELY NO WARRANTY.
+ (/-_--_-\)           www.tinycorelinux.net
+
+docker@testmachine1:~$ sudo su -
+root@testmachine1:~# vi /etc/docker/deamon.json
+root@testmachine1:~#                                                            
+root@testmachine1:~# systemctl restart docker
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            
+root@testmachine1:~# systemctl docker imagsrestart dockerdocker-machine create -d virtualbox testmachine1
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            root@testmachine1:~#           
+root@testmachine1:~# /etc/init.d/docker restart
+Stopping dockerd (2618)
+Starting dockerddocker-machine ls
+root@testmachine1:~#                                                            root@testmachine1:~# exit      
+logout
+docker@testmachine1:~$                                                          docker@testmachine1:~$ exit    
+logout
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+\n\n\n\n\n\n
+docker-machine create -d virtualbox testmachine1 \n
+docker-machine ls \n
+docker-machine ssh testmachine1 \n
+sudo su - \n
+/etc/init.d/docker restart \n
+exit \n
+exit \n
+
+
+------------------------------------
+
+docker-machine create -d virtualbox testmachine1 
+docker-machine ls 
+docker-machine ssh testmachine1 
+sudo su - 
+vi /etc/hosts
+192.168.152.127 pc31
+
+root@testmachine1:~# cat /etc/docker/daemon.json                               
+{
+   "insecure-registries": ["192.168.152.127","pc31"]
+}
+
+:wq!
+
+/etc/init.d/docker restart 
+exit 
+exit 
+
+eval $(docker-machine env testmachine1)
+docker login -u Student -p Student123 http://192.168.152.127
+
+docker info
+docker login -u Student -p Student123 http://192.168.152.127
+docker run -d -p 80:80 --name httpd httpd:latest
+docker exec -it httpd /bin/bash
+echo "<h1> This is Test </h1>" > htdocs/index.html
+exit
+docker commit httpd
+docker images
+docker tag 0ac7f822eed1 192.168.152.127/digambar/httpd-custom:latest
+docker login -u Student -p Student123 http://192.168.152.127
+docker push 192.168.152.127/digambar/httpd-custom:latest
+
+docker start httpd #(if in case service is not started)
+docker ps -a
+docker images
+remove all containers and images
+
+
+docker rm -f $(docker ps -a | awk 'NR>1 {print $1}')
+
+  209  docker images
+  210  docker rmi 0ac7f822eed1
+  211  docker ps
+  212  docker rm 192.168.152.127/digambar/httpd-custom:latest
+  213  docker rm 192.168.152.127/digambar/httpd-custom
+  214  docker rm 3e9263f75e6c
+  215  docker stop 3e9263f75e6c
+  216  docker rm 3e9263f75e6c
+  217  docker images
+  218  docker rmi 0ac7f822eed1
+  219  docker rmi d4a061d58465
+  220  docker images
+  221  docker ps
+  222  docker ps -a
+  223  docker stop e9fcbfe10e12
+  224  dokcer rm e9fcbfe10e12
+  225  docker rm e9fcbfe10e12
+  226  docker ps -a
+  227  docker images
+  228  docker rmi 0ac7f822eed1
+  229  dokcer ps -a
+  230  docker ps -a
+  231  docker images
+  232  docker push -d -p 80:80 192.168.152.127/digambar/httpd-custom:latest
+  233  docker run -d -p 80:80 192.168.152.127/diga  209  docker images
+  210  docker rmi 0ac7f822eed1
+  211  docker ps
+  212  docker rm 192.168.152.127/digambar/httpd-custom:latest
+  213  docker rm 192.168.152.127/digambar/httpd-custom
+  214  docker rm 3e9263f75e6c
+  215  docker stop 3e9263f75e6c
+  216  docker rm 3e9263f75e6c
+  217  docker images
+  218  docker rmi 0ac7f822eed1
+  219  docker rmi d4a061d58465
+  220  docker images
+  221  docker ps
+  222  docker ps -a
+  223  docker stop e9fcbfe10e12
+  224  dokcer rm e9fcbfe10e12
+  225  docker rm e9fcbfe10e12
+  226  docker ps -a
+  227  docker images
+  228  docker rmi 0ac7f822eed1
+  229  dokcer ps -a
+  230  docker ps -a
+  231  docker images
+  232  docker push -d -p 80:80 192.168.152.127/digambar/httpd-custom:latest
+  233  docker run -d -p 80:80 192.168.152.127/digambar/httpd-custom:latest
+  234  docker ps -a
+  235  docker images
+mbar/httpd-custom:latest
+  234  docker ps -a
+  235  docker images
+
+docker run -d -p 80:80 192.168.152.127/digambar/httpd-custom:latest
+
+
+---------------------------------------
+
+  238  cd
+  239  pwd
+  240  mkdir -p project
+  241  cd project
+  242  vi Dockerfile
+  243  ls
+  244  cat Dockerfile 
+  245  vi index.html
+  246  cat index.html 
+  247  vi index.html  238  cd
+  239  pwd
+  240  mkdir -p project
+  241  cd project
+  242  vi Dockerfile
+  243  ls
+  244  cat Dockerfile 
+  245  vi index.html
+  246  cat index.html 
+  247  vi index.html
+  248  cat index.html 
+  249  docker ps -a
+  250  docker images
+  251  docket stop 0b7c2e4a50f3
+  252  docker stop 0b7c2e4a50f3
+  253  docker rm 0b7c2e4a50f3
+  254  docker images
+  255  docker rmi 0ac7f822eed1
+  256  docker images
+  257  docker ps -a
+  258  eval $(docker-machine env testmachine1)
+  259  docker build -t docker-centos7 .
+  260  docker tag docker-centos7:latest 192.168.152.127/digambar/centos-httpd:v4
+  261  docker push 192.168.152.127/digambar/centos7-httpd:v4
+  262  docker ps
+  263  docker images
+  264  docker push 192.168.152.127/digambar/centos-httpd:v4
+  265  docker run -d -p 80:80 --name testhttpd 192.168.152.127/digambar/centos-httpd:v4
+  266  docker images
+  267  docker ps
+  268  docker ps -a
+  269  dokcer stop 41d1f43f3d96
+  270  docker rm 41d1f43f3d96
+  271  docker stop 192.168.152.127/digambar/centos-httpd:v4
+  272  docker stop 41d1f43f3d96
+  273  docker rm 41d1f43f3d96
+  274  docker images
+  275  docker rmi 950e2770350b
+  276  docker ps -a
+  277  docker rmi -f 950e2770350b
+  278  docker images
+  279  docker rmi -f 5e35e350aded
+  280  docker images
+  281  docker ps -a
+  282  docker run -d -p 80:80 --name testhttpd 192.168.152.127/digambar/centos-httpd:v4
+  283  history
+  248  cat index.html 
+  249  docker ps -a
+  250  docker images
+  251  docket stop 0b7c2e4a50f3
+  252  docker stop 0b7c2e4a50f3
+  253  docker rm 0b7c2e4a50f3
+  254  docker images
+  255  docker rmi 0ac7f822eed1
+  256  docker images
+  257  docker ps -a
+  258  eval $(docker-machine env testmachine1)
+  259  docker build -t docker-centos7 .
+  260  docker tag docker-centos7:latest 192.168.152.127/digambar/centos-httpd:v4
+  261  docker push 192.168.152.127/digambar/centos7-httpd:v4
+  262  docker ps
+  263  docker images
+  264  docker push 192.168.152.127/digambar/centos-httpd:v4
+  265  docker run -d -p 80:80 --name testhttpd 192.168.152.127/digambar/centos-httpd:v4
+  266  docker images
+  267  docker ps
+  268  docker ps -a
+  269  dokcer stop 41d1f43f3d96
+  270  docker rm 41d1f43f3d96
+  271  docker stop 192.168.152.127/digambar/centos-httpd:v4
+  272  docker stop 41d1f43f3d96
+  273  docker rm 41d1f43f3d96
+  274  docker images
+  275  docker rmi 950e2770350b
+  276  docker ps -a
+  277  docker rmi -f 950e2770350b
+  278  docker images
+  279  docker rmi -f 5e35e350aded
+  280  docker images
+  281  docker ps -a
+  282  docker run -d -p 80:80 --name testhttpd 192.168.152.127/digambar/centos-httpd:v4
+  283  history
+
+admin@pc4 project]$ cat Dockerfile 
+FROM centos:centos7
+RUN yum update -y &&\
+    yum install httpd -y &&\
+    yum clean all
+ADD ./index.html /usr/share/httpd/noindex
+EXPOSE 80
+CMD ["apachectl", "-D", "FOREGROUND"]
+
+[admin@pc4 project]$ cat index.html 
+<h1> THIS IS A EXAMPLE VIA DOCKERFILE </h1>
+[admin@pc4 project]$ 
+
+
+# Install Docker
+sudo curl -fsSL http://get.docker.com -o - | bashtime && dokcer run -t -p 
+
+sudo systemctl enable --now docker
+newgrp docker
+sudo systemctl enable --now docker
+docker run busybox
+#Run the ngix in docker
+docker run -it nginx:latest -p 80:80
+docker run -it -p 80:80 --name nginx nginx:latest
+dokcer run -d -p 80:80 --name nginx nginx:latestdocker login -u Student -p Student123 http://192.168.152.127
+docker ps -atime && dokcer run -t -p 
+
+docker ps -a | awk 'NR>1 {print $1}'
+docker start ngixdocker-machine create -d virtualbox machine2
+docker stop nginx---------------------------------------------------------------------
+docker rm -f $(docker ps -a | awk 'NR>1 {print $1}')
+apt-get 
+docker network ls
+dokcer stop nginxtime && dokcer run -t -p [admin@pc4 ~]$ docker-machine create -d virtualbox testmachine1
+Running pre-create checks...
+Creating machine...
+(testmachine1) Copying /home/admin/.docker/machine/cache/boot2docker.iso to /home/admin/.docker/machine/machines/testmachine1/boot2docker.iso...
+(testmachine1) Creating VirtualBox VM...
+(testmachine1) Creating SSH key...
+(testmachine1) Starting the VM...
+(testmachine1) Check network to re-create if needed...
+(testmachine1) Waiting for an IP...
+Waiting for machine to be running, this may take a few minutes...
+Detecting operating system of created instance...
+Waiting for SSH to be available...
+Detecting the provisioner...
+Provisioning with boot2docker...
+Copying certs to the local machine directory...
+Copying certs to the remote machine...
+Setting Docker configuration on the remote daemon...
+Checking connection to Docker...
+Docker is up and running!
+To see how to connect your Docker Client to the Docker Engine running on this virtual machine, run: docker-machine env testmachine1
+[admin@pc4 ~]$ docker-machine ls
+NAME           ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER     ERRORS
+testmachine1   -        virtualbox   Running   tcp://192.168.99.100:2376           v19.03.5   
+[admin@pc4 ~]$ docker-machine ssh testmachine1
+   ( '>')
+  /) TC (\   Core is distributed with ABSOLUTELY NO WARRANTY.
+ (/-_--_-\)           www.tinycorelinux.net
+
+docker@testmachine1:~$ sudo su -
+root@testmachine1:~# vi /etc/docker/deamon.json
+root@testmachine1:~#                                                            root@testmachine1:~# systemctl restart docker
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            root@testmachine1:~# systemctl restart docker
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            root@testmachine1:~#           
+root@testmachine1:~# /etc/init.d/docker restart
+Stopping dockerd (2618)
+Starting dockerd
+root@testmachine1:~#                                                            root@testmachine1:~# exit      
+logout
+docker@testmachine1:~$                                                          docker@testmachine1:~$ exit    
+logout
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+
+
+docker ps -a
+docker rm -f $(docker ps -a | awk'NR>1 {print $1}')
+docker image prune -af # delete all the images fromt he docker.
+
+------------------------
+docker info
+---------------------------
+docker image prune
+docker run -it -p 80:80 --name ngix nginx:latest
+docker exec -it <container ID>   61  docker-machine create -d virtualbox dokcet_test
+   62  base=https://github.com/docker/machine/releases/download/v0.16.0 &&   curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&   sudo mv /tmp/docker-machine /usr/local/bin/docker-machine &&   chmod +x /usr/local/bin/docker-machi[admin@pc4 ~]$ docker-machine create -d virtualbox testmachine1
+Running pre-create checks...
+Creating machine...
+(testmachine1) Copying /home/admin/.docker/machine/cache/boot2docker.iso to /home/admin/.docker/machine/machines/testmachine1/boot2docker.iso...
+(testmachine1) Creating VirtualBox VM...
+(testmachine1) Creating SSH key...
+(testmachine1) Starting the VM...
+(testmachine1) Check network to re-create if needed...
+(testmachine1) Waiting for an IP...
+Waiting for machine to be running, this may take a few minutes...
+Detecting operating system of created instance...
+Waiting for SSH to be available...
+Detecting the provisioner...
+Provisioning with boot2docker...
+Copying certs to the local machine directory...
+Copying certs to the remote machine...
+Setting Docker configuration on the remote daemon...
+Checking connection to Docker...
+Docker is up and running!
+To see how to connect your Docker Client to the Docker Engine running on this virtual machine, run: docker-machine env testmachine1
+[admin@pc4 ~]$ docker-machine ls
+NAME           ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER     ERRORS
+testmachine1   -        virtualbox   Running   tcp://192.168.99.100:2376           v19.03.5   
+[admin@pc4 ~]$ docker-machine ssh testmachine1
+   ( '>')
+  /) TC (\   Core is distributed with ABSOLUTELY NO WARRANTY.
+ (/-_--_-\)           www.tinycorelinux.net
+
+docker@testmachine1:~$ sudo su -
+root@testmachine1:~# vi /etc/docker/deamon.json
+root@testmachine1:~#                                                            root@testmachine1:~# systemctl restart docker
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            root@testmachine1:~# systemctl restart docker
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            root@testmachine1:~#           
+root@testmachine1:~# /etc/init.d/docker restart
+Stopping dockerd (2618)
+Starting dockerd
+root@testmachine1:~#                                                            root@testmachine1:~# exit      
+logout
+docker@testmachine1:~$                                                          docker@testmachine1:~$ exit    
+logout
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+ne
+   63  docker-machine create -d virtualbox docker_test
+   64  base=https://github.com/docker/machine/releases/download/v0.16.0[root@pc4 admin]# eval $(docker-machine env machine1)
+[root@pc4 admin]# docker info
+
+   65  curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine
+   66  sudo mv /tmp/docker-machine /usr/local/bin/docker-machine
+   67  chmod +x /usr/local/bin/docker-machine
+   68  docker-machine create -d virtualbox docker_test
+   69  vi ~/.bashrc
+   70  vi ~/.bashrc
+   71  docker-machine create -d virtualbox docker_test
+   72  vi ~/.bashrc
+   73  . ~/.bashrc 
+   74  docker-machine create -d virtualbox docker_test
+   75  docker-machine create -d virtualbox docker-test
+   76  docker ps
+   77  docker-machine
+   78* docker-machine 
+   79  docker-machine ls
+   80  docker-machine env docker-test
+   81  vi ~/.bashrc
+   82  ssh 172.20.20.15 2375
+   83  ssh admin@172.20.20.150 2375
+   84  dockerd
+   85  docker-machine ls
+   86  history 
+[root@pc4 admin]# 
+bin/sh OR /bin/bash
+apt-get update
+
+
+docker search apache # search apache 
+docker inspect <container ID>
+docker start nginxCONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+
+docker network ls
+
+
+base=https://github.com/docker/machine/releases/download/v0.16.0
+curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine
+sudo mv /tmp/docker-machine /usr/local/bin/docker-machine
+chmod +x /usr/local/bin/docker-machine
+
+https://hub.docker.com/_/httpd
+
+https://docs.docker.com/machine/install-machine/
+
+  61  docker-machine create -d virtualbox dokcet_test
+   62  base=https://github.com/docker/machine/releases/download/v0.16.0 &&   curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&   sudo mv /tmp/docker-machine /usr/local/bin/docker-machine &&   chmod +x /usr/local/bin/docker-machine
+   63  docker-machine create -d virtualbox docker_test
+   64  base=https://github.com/docker/machine/releases/download/v0.16.0
+   65  curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine
+   66  sudo mv /tmp/docker-machine /usr/local/bin/docker-machine
+   67  chmod +x /usr/local/bin/docker-machine
+   68  docker-machine create -d virtualbox docker_test
+   69  vi ~/.bashrc
+   70  vi ~/.bashrc
+   71  docker-machine create -d virtualbox docker_test
+   72  vi ~/.bashrc
+   73  . ~/.bashrc 
+   74  docker-machine create -d virtualbox docker_test
+   75  docker-machine create -d virtualbox docker-test
+   76  docker ps
+   77  docker-machine
+   78* docker-machine 
+   79  docker-machine ls
+   80  docker-machine env docker-test
+   81  vi ~/.bashrc
+   82  ssh 172.20.20.15 2375
+   83  ssh admin@172.20.20.150 2375
+   84  dockerd
+   85  docker-machine ls
+   86  history 
+[root@pc4 admin]# 
+docker-machine ls
+docker-machine create -d virtualbox machine1
+docker-machine create -d virtualbox machine2
+
+[root@pc4 admin]# eval $(docker-machine env machine1)
+[root@pc4 admin]# docker info
+
+root@pc4 admin]# docker-machine ls
+NAME          ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER     ERRORS
+docker-test   -        virtualbox   Running   tcp://192.168.99.100:2376           v19.03.5   
+machine1      -        virtualbox   Running   tcp://192.168.99.103:2376           v19.03.5   
+machine2      *        virtualbox   Running   tcp://192.168.99.102:2376           v19.03.5   
+[root@pc4 admin]# docker-machine stop machine2
+Stopping "machine2"...
+Machine "machine2" was stopped.
+[root@pc4 admin]# 
+[root@pc4 admin]# 
+[root@pc4 admin]# docker-machine ls
+NAME          ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER     ERRORS
+docker-test   -        virtualbox   Running   tcp://192.168.99.100:2376           v19.03.5   
+machine1      -        virtualbox   Running   tcp://192.168.99.103:2376           v19.03.5   
+machine2      -        virtualbox   Stopped                                       Unknown    
+[root@pc4 admin]# 
+[root@pc4 admin]# 
+
+
+------------------------------------------
+docker run -d -p 80:80 --name httpd httpd:latest
+docker exec -it httpd /bin/bash
+
+
+125  docker info
+  126  docker ps
+  127  docker-machine ls
+  128  docker exec -it httpd /bin/bash
+  129  docker commit httpd
+  130  docker image
+  131  docker images
+  132  docker save ef7e3f926acb > httpd.tgz
+  133  docker exec -it httpd /bin/bash
+  134  docker commit httpd
+  135  docker-machine ps
+  136  docker-machine ls
+  137  docker images
+  138  docker save 32ec26c610c0 > httpd.tgz
+  139  docker stop httpd && docker rm -f $(docker ps -a |awk 'NR>1 {print $1}')
+  140  docker rmi $(docker images |awk 'NR>1 {print $1}')
+  141  docker rmi 
+  142  docker images
+  143  docker rmi --hemlp
+  144  docker rmi --help
+  145  docker rmi 32ec26c610c0
+  146  docker rmi ef7e3f926acbdocker run -d -p 80:8docker run -d -p 80:80 --name httpd httpd:latest
+docker exec -it httpd /bin/bash0 --name httpd httpd:latest
+docker exec -it httpd /bin/bash
+  147  docker images
+  148  docker load < httpd.tgz
+  149  docker images
+  150  docker run -d -p 80:80 --name httpd 32ec26c610c0
+  151  history
+[root@pc4 admin]# 
+
+
+***********************************************************
+***********************************************************
+HArbor Registry - https://goharbor.io/
+
+[admin@pc4 ~]$ docker-machidocker-machine create -d virtualbox testmachine1
+Running pre-create checks...
+Creating machine...docker-machine create -d virtualbox testmachine1 
+docker-machine ls 
+docker-machine ssh testmachine1 
+sudo su - 
+/etc/init.d/docker restart 
+exit 
+exit 
+(testmachine1) Copying /home/admin/.docker/machine/cache/boot2docker.iso to /home/admin/.docker/machine/machines/testmachine1/boot2docker.iso...
+(testmachine1) Creating VirtualBox VM...
+(testmachine1) Creating SSH key...
+(testmachine1) Starting the VM...
+(testmachine1) Check network to re-create if needed...
+(testmachine1) Waiting for an IP...
+Waiting for machine to be running, this may take a few minutes...
+Detecting operating system of created instance...
+Waiting for SSH to be available...
+Detecting the provisioner...
+Provisioning with boot2docker...
+Copying certs to the local machine directory...
+Copying certs to the remote machine...
+Setting Docker configuration on the remote daemon...
+Checking connection to Docker...
+Docker is up and running!
+To see how to connect your Docker Client to the Docker Engine running on this virtual machine, run: docker-machine env testmachine1
+[admin@pc4 ~]$ docker-machine ls
+NAME           ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER     ERRORS
+testmachine1   -        virtualbox   Running   tcp://192.168.99.100:2376           v19.03.5   
+[admin@pc4 ~]$ docker-machine ssh testmachine1
+   ( '>')
+  /) TC (\   Core is distributed with ABSOLUTELY NO WARRANTY.
+ (/-_--_-\)           www.tinycorelinux.net
+
+docker@testmachine1:~$ sudo su -
+root@testmachine1:~# vi /etc/docker/deamon.json
+root@testmachine1:~#                                                            
+root@testmachine1:~# systemctl restart docker
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            
+root@testmachine1:~# systemctl docker imagsrestart dockerdocker-machine create -d virtualbox testmachine1
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            root@testmachine1:~#           
+root@testmachine1:~# /etc/init.d/docker restart
+Stopping dockerd (2618)
+Starting dockerddocker-machine ls
+root@testmachine1:~#                                                            root@testmachine1:~# exit      
+logout
+docker@testmachine1:~$                                                          docker@testmachine1:~$ exit    
+logout
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+\n\n\n\n\n\n
+docker-machine create -d virtualbox testmachine1 \n
+docker-machine ls \n
+docker-machine ssh testmachine1 \n
+sudo su - \n
+/etc/init.d/docker restart \n
+exit \n
+exit \n
+
+
+------------------------------------
+
+docker-machine create -d virtualbox testmachine1 
+docker-machine ls 
+docker-machine ssh testmachine1 
+sudo su - 
+vi /etc/hosts
+192.168.152.127 pc31
+
+root@testmachine1:~# cat /etc/docker/daemon.json                               
+{
+   "insecure-registries": ["192.168.152.127","pc31"]
+}
+
+:wq!
+
+/etc/init.d/docker restart 
+exit 
+exit 
+
+eval $(docker-machine env testmachine1)
+docker login -u Student -p Student123 http://192.168.152.127
+
+docker info
+docker login -u Student -p Student123 http://192.168.152.127
+docker run -d -p 80:80 --name httpd httpd:latest
+docker exec -it httpd /bin/bash
+echo "<h1> This is Test </h1>" > htdocs/index.html
+exit
+docker commit httpd
+docker images
+docker tag 0ac7f822eed1 192.168.152.127/digambar/httpd-custom:latest
+docker login -u Student -p Student123 http://192.168.152.127
+docker push 192.168.152.127/digambar/httpd-custom:latest
+
+docker start httpd #(if in case service is not started)
+docker ps -a
+docker images
+remove all containers and images
+
+
+docker rm -f $(docker ps -a | awk 'NR>1 {print $1}')
+
+  209  docker images
+  210  docker rmi 0ac7f822eed1
+  211  docker ps
+  212  docker rm 192.168.152.127/digambar/httpd-custom:latest
+  213  docker rm 192.168.152.127/digambar/httpd-custom
+  214  docker rm 3e9263f75e6c
+  215  docker stop 3e9263f75e6c
+  216  docker rm 3e9263f75e6c
+  217  docker images
+  218  docker rmi 0ac7f822eed1
+  219  docker rmi d4a061d58465
+  220  docker images
+  221  docker ps
+  222  docker ps -a
+  223  docker stop e9fcbfe10e12
+  224  dokcer rm e9fcbfe10e12
+  225  docker rm e9fcbfe10e12
+  226  docker ps -a
+  227  docker images
+  228  docker rmi 0ac7f822eed1
+  229  dokcer ps -a
+  230  docker ps -a
+  231  docker images
+  232  docker push -d -p 80:80 192.168.152.127/digambar/httpd-custom:latest
+  233  docker run -d -p 80:80 192.168.152.127/diga  209  docker images
+  210  docker rmi 0ac7f822eed1
+  211  docker ps
+  212  docker rm 192.168.152.127/digambar/httpd-custom:latest
+  213  docker rm 192.168.152.127/digambar/httpd-custom
+  214  docker rm 3e9263f75e6c
+  215  docker stop 3e9263f75e6c
+  216  docker rm 3e9263f75e6c
+  217  docker images
+  218  docker rmi 0ac7f822eed1
+  219  docker rmi d4a061d58465
+  220  docker images
+  221  docker ps
+  222  docker ps -a
+  223  docker stop e9fcbfe10e12
+  224  dokcer rm e9fcbfe10e12
+  225  docker rm e9fcbfe10e12
+  226  docker ps -a
+  227  docker images
+  228  docker rmi 0ac7f822eed1
+  229  dokcer ps -a
+  230  docker ps -a
+  231  docker images
+  232  docker push -d -p 80:80 192.168.152.127/digambar/httpd-custom:latest
+  233  docker run -d -p 80:80 192.168.152.127/digambar/httpd-custom:latest
+  234  docker ps -a
+  235  docker images
+mbar/httpd-custom:latest
+  234  docker ps -a
+  235  docker images
+
+docker run -d -p 80:80 192.168.152.127/digambar/httpd-custom:latest
+
+
+---------------------------------------
+
+  238  cd
+  239  pwd
+  240  mkdir -p project
+  241  cd project
+  242  vi Dockerfile
+  243  ls
+  244  cat Dockerfile 
+  245  vi index.html
+  246  cat index.html 
+  247  vi index.html  238  cd
+  239  pwd
+  240  mkdir -p project
+  241  cd project
+  242  vi Dockerfile
+  243  ls
+  244  cat Dockerfile 
+  245  vi index.html
+  246  cat index.html 
+  247  vi index.html
+  248  cat index.html 
+  249  docker ps -a
+  250  docker images
+  251  docket stop 0b7c2e4a50f3
+  252  docker stop 0b7c2e4a50f3
+  253  docker rm 0b7c2e4a50f3
+  254  docker images
+  255  docker rmi 0ac7f822eed1
+  256  docker images
+  257  docker ps -a
+  258  eval $(docker-machine env testmachine1)
+  259  docker build -t docker-centos7 .
+  260  docker tag docker-centos7:latest 192.168.152.127/digambar/centos-httpd:v4
+  261  docker push 192.168.152.127/digambar/centos7-httpd:v4
+  262  docker ps
+  263  docker images
+  264  docker push 192.168.152.127/digambar/centos-httpd:v4
+  265  docker run -d -p 80:80 --name testhttpd 192.168.152.127/digambar/centos-httpd:v4
+  266  docker images
+  267  docker ps
+  268  docker ps -a
+  269  dokcer stop 41d1f43f3d96
+  270  docker rm 41d1f43f3d96
+  271  docker stop 192.168.152.127/digambar/centos-httpd:v4
+  272  docker stop 41d1f43f3d96
+  273  docker rm 41d1f43f3d96
+  274  docker images
+  275  docker rmi 950e2770350b
+  276  docker ps -a
+  277  docker rmi -f 950e2770350b
+  278  docker images
+  279  docker rmi -f 5e35e350aded
+  280  docker images
+  281  docker ps -a
+  282  docker run -d -p 80:80 --name testhttpd 192.168.152.127/digambar/centos-httpd:v4
+  283  history
+  248  cat index.html 
+  249  docker ps -a
+  250  docker images
+  251  docket stop 0b7c2e4a50f3
+  252  docker stop 0b7c2e4a50f3
+  253  docker rm 0b7c2e4a50f3
+  254  docker images
+  255  docker rmi 0ac7f822eed1
+  256  docker images
+  257  docker ps -a
+  258  eval $(docker-machine env testmachine1)
+  259  docker build -t docker-centos7 .
+  260  docker tag docker-centos7:latest 192.168.152.127/digambar/centos-httpd:v4
+  261  docker push 192.168.152.127/digambar/centos7-httpd:v4
+  262  docker ps
+  263  docker images
+  264  docker push 192.168.152.127/digambar/centos-httpd:v4
+  265  docker run -d -p 80:80 --name testhttpd 192.168.152.127/digambar/centos-httpd:v4
+  266  docker images
+  267  docker ps
+  268  docker ps -a
+  269  dokcer stop 41d1f43f3d96
+  270  docker rm 41d1f43f3d96
+  271  docker stop 192.168.152.127/digambar/centos-httpd:v4
+  272  docker stop 41d1f43f3d96
+  273  docker rm 41d1f43f3d96
+  274  docker images
+  275  docker rmi 950e2770350b
+  276  docker ps -a
+  277  docker rmi -f 950e2770350b
+  278  docker images
+  279  docker rmi -f 5e35e350aded
+  280  docker images
+  281  docker ps -a
+  282  docker run -d -p 80:80 --name testhttpd 192.168.152.127/digambar/centos-httpd:v4
+  283  history
+
+admin@pc4 project]$ cat Dockerfile 
+FROM centos:centos7
+RUN yum update -y &&\
+    yum install httpd -y &&\
+    yum clean all
+ADD ./index.html /usr/share/httpd/noindex
+EXPOSE 80
+CMD ["apachectl", "-D", "FOREGROUND"]
+
+[admin@pc4 project]$ cat index.html 
+<h1> THIS IS A EXAMPLE VIA DOCKERFILE </h1>
+[admin@pc4 project]$ 
+
+
+
+[admin@pc4 ~]$ docker-machidocker-machine create -d virtualbox testmachine1
+Running pre-create checks...
+Creating machine...docker-machine create -d virtualbox testmachine1 
+docker-machine ls 
+docker-machine ssh testmachine1 
+sudo su - 
+/etc/init.d/docker restart 
+exit 
+exit 
+(testmachine1) Copying /home/admin/.docker/machine/cache/boot2docker.iso to /home/admin/.docker/machine/machines/testmachine1/boot2docker.iso...
+(testmachine1) Creating VirtualBox VM...
+(testmachine1) Creating SSH key...
+(testmachine1) Starting the VM...
+(testmachine1) Check network to re-create if needed...
+(testmachine1) Waiting for an IP...
+Waiting for machine to be running, this may take a few minutes...
+Detecting operating system of created instance...
+Waiting for SSH to be available...
+Detecting the provisioner...
+Provisioning with boot2docker...
+Copying certs to the local machine directory...
+Copying certs to the remote machine...
+Setting Docker configuration on the remote daemon...
+Checking connection to Docker...
+Docker is up and running!
+To see how to connect your Docker Client to the Docker Engine running on this virtual machine, run: docker-machine env testmachine1
+[admin@pc4 ~]$ docker-machine ls
+NAME           ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER     ERRORS
+testmachine1   -        virtualbox   Running   tcp://192.168.99.100:2376           v19.03.5   
+[admin@pc4 ~]$ docker-machine ssh testmachine1
+   ( '>')
+  /) TC (\   Core is distributed with ABSOLUTELY NO WARRANTY.
+ (/-_--_-\)           www.tinycorelinux.net
+
+docker@testmachine1:~$ sudo su -
+root@testmachine1:~# vi /etc/docker/deamon.json
+root@testmachine1:~#                                                            
+root@testmachine1:~# systemctl restart docker
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            
+root@testmachine1:~# systemctl docker imagsrestart dockerdocker-machine create -d virtualbox testmachine1
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            root@testmachine1:~#           
+root@testmachine1:~# /etc/init.d/docker restart
+Stopping dockerd (2618)
+Starting dockerddocker-machine ls
+root@testmachine1:~#                                                            root@testmachine1:~# exit      
+logout
+docker@testmachine1:~$                                                          docker@testmachine1:~$ exit    
+logout
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+\n\n\n\n\n\n
+docker-machine create -d virtualbox testmachine1 \n
+docker-machine ls \n
+docker-machine ssh testmachine1 \n
+sudo su - \n
+/etc/init.d/docker restart \n
+exit \n
+exit \n
+
+
+------------------------------------
+
+docker-machine create -d virtualbox testmachine1 
+docker-machine ls 
+docker-machine ssh testmachine1 
+sudo su - 
+vi /etc/hosts
+192.168.152.127 pc31
+
+root@testmachine1:~# cat /etc/docker/daemon.json                               
+{
+   "insecure-registries": ["192.168.152.127","pc31"]
+}
+
+:wq!
+
+/etc/init.d/docker restart 
+exit 
+exit 
+
+eval $(docker-machine env testmachine1)
+docker login -u Student -p Student123 http://192.168.152.127
+
+docker info
+docker login -u Student -p Student123 http://192.168.152.127
+docker run -d -p 80:80 --name httpd httpd:latest
+docker exec -it httpd /bin/bash
+echo "<h1> This is Test </h1>" > htdocs/index.html
+exit
+docker commit httpd
+docker images
+docker tag 0ac7f822eed1 192.168.152.127/digambar/httpd-custom:latest
+docker login -u Student -p Student123 http://192.168.152.127
+docker push 192.168.152.127/digambar/httpd-custom:latest
+
+docker start httpd #(if in case service is not started)
+docker ps -a
+docker images
+remove all containers and images
+
+
+docker rm -f $(docker ps -a | awk 'NR>1 {print $1}')
+
+  209  docker images
+  210  docker rmi 0ac7f822eed1
+  211  docker ps
+  212  docker rm 192.168.152.127/digambar/httpd-custom:latest
+  213  docker rm 192.168.152.127/digambar/httpd-custom
+  214  docker rm 3e9263f75e6c
+  215  docker stop 3e9263f75e6c
+  216  docker rm 3e9263f75e6c
+  217  docker images
+  218  docker rmi 0ac7f822eed1
+  219  docker rmi d4a061d58465
+  220  docker images
+  221  docker ps
+  222  docker ps -a
+  223  docker stop e9fcbfe10e12
+  224  dokcer rm e9fcbfe10e12
+  225  docker rm e9fcbfe10e12
+  226  docker ps -a
+  227  docker images
+  228  docker rmi 0ac7f822eed1
+  229  dokcer ps -a
+  230  docker ps -a
+  231  docker images
+  232  docker push -d -p 80:80 192.168.152.127/digambar/httpd-custom:latest
+  233  docker run -d -p 80:80 192.168.152.127/diga  209  docker images
+  210  docker rmi 0ac7f822eed1
+  211  docker ps
+  212  docker rm 192.168.152.127/digambar/httpd-custom:latest
+  213  docker rm 192.168.152.127/digambar/httpd-custom
+  214  docker rm 3e9263f75e6c
+  215  docker stop 3e9263f75e6c
+  216  docker rm 3e9263f75e6c
+  217  docker images
+  218  docker rmi 0ac7f822eed1
+  219  docker rmi d4a061d58465
+  220  docker images
+  221  docker ps
+  222  docker ps -a
+  223  docker stop e9fcbfe10e12
+  224  dokcer rm e9fcbfe10e12
+  225  docker rm e9fcbfe10e12
+  226  docker ps -a
+  227  docker images
+  228  docker rmi 0ac7f822eed1
+  229  dokcer ps -a
+  230  docker ps -a
+  231  docker images
+  232  docker push -d -p 80:80 192.168.152.127/digambar/httpd-custom:latest
+  233  docker run -d -p 80:80 192.168.152.127/digambar/httpd-custom:latest
+  234  docker ps -a
+  235  docker images
+mbar/httpd-custom:latest
+  234  docker ps -a
+  235  docker images
+
+docker run -d -p 80:80 192.168.152.127/digambar/httpd-custom:latest
+
+
+---------------------------------------
+
+  238  cd
+  239  pwd
+  240  mkdir -p project
+  241  cd project
+  242  vi Dockerfile
+  243  ls
+  244  cat Dockerfile 
+  245  vi index.html
+  246  cat index.html 
+  247  vi index.html  238  cd
+  239  pwd
+  240  mkdir -p project
+  241  cd project
+  242  vi Dockerfile
+  243  ls
+  244  cat Dockerfile 
+  245  vi index.html
+  246  cat index.html 
+  247  vi index.html
+  248  cat index.html 
+  249  docker ps -a
+  250  docker images
+  251  docket stop 0b7c2e4a50f3
+  252  docker stop 0b7c2e4a50f3
+  253  docker rm 0b7c2e4a50f3
+  254  docker images
+  255  docker rmi 0ac7f822eed1
+  256  docker images
+  257  docker ps -a
+  258  eval $(docker-machine env testmachine1)
+  259  docker build -t docker-centos7 .
+  260  docker tag docker-centos7:latest 192.168.152.127/digambar/centos-httpd:v4
+  261  docker push 192.168.152.127/digambar/centos7-httpd:v4
+  262  docker ps
+  263  docker images
+  264  docker push 192.168.152.127/digambar/centos-httpd:v4
+  265  docker run -d -p 80:80 --name testhttpd 192.168.152.127/digambar/centos-httpd:v4
+  266  docker images
+  267  docker ps
+  268  docker ps -a
+  269  dokcer stop 41d1f43f3d96
+  270  docker rm 41d1f43f3d96
+  271  docker stop 192.168.152.127/digambar/centos-httpd:v4
+  272  docker stop 41d1f43f3d96
+  273  docker rm 41d1f43f3d96
+  274  docker images
+  275  docker rmi 950e2770350b
+  276  docker ps -a
+  277  docker rmi -f 950e2770350b
+  278  docker images
+  279  docker rmi -f 5e35e350aded
+  280  docker images
+  281  docker ps -a
+  282  docker run -d -p 80:80 --name testhttpd 192.168.152.127/digambar/centos-httpd:v4
+  283  history
+  248  cat index.html 
+  249  docker ps -a
+  250  docker images
+  251  docket stop 0b7c2e4a50f3
+  252  docker stop 0b7c2e4a50f3
+  253  docker rm 0b7c2e4a50f3
+  254  docker images
+  255  docker rmi 0ac7f822eed1
+  256  docker images
+  257  docker ps -a
+  258  eval $(docker-machine env testmachine1)
+  259  docker build -t docker-centos7 .
+  260  docker tag docker-centos7:latest 192.168.152.127/digambar/centos-httpd:v4
+  261  docker push 192.168.152.127/digambar/centos7-httpd:v4
+  262  docker ps
+  263  docker images
+  264  docker push 192.168.152.127/digambar/centos-httpd:v4
+  265  docker run -d -p 80:80 --name testhttpd 192.168.152.127/digambar/centos-httpd:v4
+  266  docker images
+  267  docker ps
+  268  docker ps -a
+  269  dokcer stop 41d1f43f3d96
+  270  docker rm 41d1f43f3d96
+  271  docker stop 192.168.152.127/digambar/centos-httpd:v4
+  272  docker stop 41d1f43f3d96
+  273  docker rm 41d1f43f3d96
+  274  docker images
+  275  docker rmi 950e2770350b
+  276  docker ps -a
+  277  docker rmi -f 950e2770350b
+  278  docker images
+  279  docker rmi -f 5e35e350aded
+  280  docker images
+  281  docker ps -a
+  282  docker run -d -p 80:80 --name testhttpd 192.168.152.127/digambar/centos-httpd:v4
+  283  history
+
+admin@pc4 project]$ cat Dockerfile 
+FROM centos:centos7
+RUN yum update -y &&\
+    yum install httpd -y &&\
+    yum clean all
+ADD ./index.html /usr/share/httpd/noindex
+EXPOSE 80# Install Docker
+sudo curl -fsSL http://get.docker.com -o - | bashtime && dokcer run -t -p 
+
+sudo systemctl enable --now docker
+newgrp docker
+sudo systemctl enable --now docker
+docker run busybox
+#Run the ngix in docker
+docker run -it nginx:latest -p 80:80
+docker run -it -p 80:80 --name nginx nginx:latest
+dokcer run -d -p 80:80 --name nginx nginx:latestdocker login -u Student -p Student123 http://192.168.152.127
+docker ps -atime && dokcer run -t -p 
+
+docker ps -a | awk 'NR>1 {print $1}'
+docker start ngixdocker-machine create -d virtualbox machine2
+docker stop nginx---------------------------------------------------------------------
+docker rm -f $(docker ps -a | awk 'NR>1 {print $1}')
+apt-get 
+docker network ls
+dokcer stop nginxtime && dokcer run -t -p [admin@pc4 ~]$ docker-machine create -d virtualbox testmachine1
+Running pre-create checks...
+Creating machine...
+(testmachine1) Copying /home/admin/.docker/machine/cache/boot2docker.iso to /home/admin/.docker/machine/machines/testmachine1/boot2docker.iso...
+(testmachine1) Creating VirtualBox VM...
+(testmachine1) Creating SSH key...
+(testmachine1) Starting the VM...
+(testmachine1) Check network to re-create if needed...
+(testmachine1) Waiting for an IP...
+Waiting for machine to be running, this may take a few minutes...
+Detecting operating system of created instance...
+Waiting for SSH to be available...
+Detecting the provisioner...
+Provisioning with boot2docker...
+Copying certs to the local machine directory...
+Copying certs to the remote machine...
+Setting Docker configuration on the remote daemon...
+Checking connection to Docker...
+Docker is up and running!
+To see how to connect your Docker Client to the Docker Engine running on this virtual machine, run: docker-machine env testmachine1
+[admin@pc4 ~]$ docker-machine ls
+NAME           ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER     ERRORS
+testmachine1   -        virtualbox   Running   tcp://192.168.99.100:2376           v19.03.5   
+[admin@pc4 ~]$ docker-machine ssh testmachine1
+   ( '>')
+  /) TC (\   Core is distributed with ABSOLUTELY NO WARRANTY.
+ (/-_--_-\)           www.tinycorelinux.net
+
+docker@testmachine1:~$ sudo su -
+root@testmachine1:~# vi /etc/docker/deamon.json
+root@testmachine1:~#                                                            root@testmachine1:~# systemctl restart docker
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            root@testmachine1:~# systemctl restart docker
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            root@testmachine1:~#           
+root@testmachine1:~# /etc/init.d/docker restart
+Stopping dockerd (2618)
+Starting dockerd
+root@testmachine1:~#                                                            root@testmachine1:~# exit      
+logout
+docker@testmachine1:~$                                                          docker@testmachine1:~$ exit    
+logout
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+
+
+docker ps -a
+docker rm -f $(docker ps -a | awk'NR>1 {print $1}')
+docker image prune -af # delete all the images fromt he docker.
+
+------------------------
+docker info
+---------------------------
+docker image prune
+docker run -it -p 80:80 --name ngix nginx:latest
+docker exec -it <container ID>   61  docker-machine create -d virtualbox dokcet_test
+   62  base=https://github.com/docker/machine/releases/download/v0.16.0 &&   curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&   sudo mv /tmp/docker-machine /usr/local/bin/docker-machine &&   chmod +x /usr/local/bin/docker-machi[admin@pc4 ~]$ docker-machine create -d virtualbox testmachine1
+Running pre-create checks...
+Creating machine...
+(testmachine1) Copying /home/admin/.docker/machine/cache/boot2docker.iso to /home/admin/.docker/machine/machines/testmachine1/boot2docker.iso...
+(testmachine1) Creating VirtualBox VM...
+(testmachine1) Creating SSH key...
+(testmachine1) Starting the VM...
+(testmachine1) Check network to re-create if needed...
+(testmachine1) Waiting for an IP...
+Waiting for machine to be running, this may take a few minutes...
+Detecting operating system of created instance...
+Waiting for SSH to be available...
+Detecting the provisioner...
+Provisioning with boot2docker...
+Copying certs to the local machine directory...
+Copying certs to the remote machine...
+Setting Docker configuration on the remote daemon...
+Checking connection to Docker...
+Docker is up and running!
+To see how to connect your Docker Client to the Docker Engine running on this virtual machine, run: docker-machine env testmachine1
+[admin@pc4 ~]$ docker-machine ls
+NAME           ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER     ERRORS
+testmachine1   -        virtualbox   Running   tcp://192.168.99.100:2376           v19.03.5   
+[admin@pc4 ~]$ docker-machine ssh testmachine1
+   ( '>')
+  /) TC (\   Core is distributed with ABSOLUTELY NO WARRANTY.
+ (/-_--_-\)           www.tinycorelinux.net
+
+docker@testmachine1:~$ sudo su -
+root@testmachine1:~# vi /etc/docker/deamon.json
+root@testmachine1:~#                                                            root@testmachine1:~# systemctl restart docker
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            root@testmachine1:~# systemctl restart docker
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            root@testmachine1:~#           
+root@testmachine1:~# /etc/init.d/docker restart
+Stopping dockerd (2618)
+Starting dockerd
+root@testmachine1:~#                                                            root@testmachine1:~# exit      
+logout
+docker@testmachine1:~$                                                          docker@testmachine1:~$ exit    
+logout
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+ne
+   63  docker-machine create -d virtualbox docker_test
+   64  base=https://github.com/docker/machine/releases/download/v0.16.0[root@pc4 admin]# eval $(docker-machine env machine1)
+[root@pc4 admin]# docker info
+
+   65  curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine
+   66  sudo mv /tmp/docker-machine /usr/local/bin/docker-machine
+   67  chmod +x /usr/local/bin/docker-machine
+   68  docker-machine create -d virtualbox docker_test
+   69  vi ~/.bashrc
+   70  vi ~/.bashrc
+   71  docker-machine create -d virtualbox docker_test
+   72  vi ~/.bashrc
+   73  . ~/.bashrc 
+   74  docker-machine create -d virtualbox docker_test
+   75  docker-machine create -d virtualbox docker-test
+   76  docker ps
+   77  docker-machine
+   78* docker-machine 
+   79  docker-machine ls
+   80  docker-machine env docker-test
+   81  vi ~/.bashrc
+   82  ssh 172.20.20.15 2375
+   83  ssh admin@172.20.20.150 2375
+   84  dockerd
+   85  docker-machine ls
+   86  history 
+[root@pc4 admin]# 
+bin/sh OR /bin/bash
+apt-get update
+
+
+docker search apache # search apache 
+docker inspect <container ID>
+docker start nginxCONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+
+docker network ls
+
+
+base=https://github.com/docker/machine/releases/download/v0.16.0
+curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine
+sudo mv /tmp/docker-machine /usr/local/bin/docker-machine
+chmod +x /usr/local/bin/docker-machine
+
+https://hub.docker.com/_/httpd
+
+https://docs.docker.com/machine/install-machine/
+
+  61  docker-machine create -d virtualbox dokcet_test
+   62  base=https://github.com/docker/machine/releases/download/v0.16.0 &&   curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&   sudo mv /tmp/docker-machine /usr/local/bin/docker-machine &&   chmod +x /usr/local/bin/docker-machine
+   63  docker-machine create -d virtualbox docker_test
+   64  base=https://github.com/docker/machine/releases/download/v0.16.0
+   65  curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine
+   66  sudo mv /tmp/docker-machine /usr/local/bin/docker-machine
+   67  chmod +x /usr/local/bin/docker-machine
+   68  docker-machine create -d virtualbox docker_test
+   69  vi ~/.bashrc
+   70  vi ~/.bashrc
+   71  docker-machine create -d virtualbox docker_test
+   72  vi ~/.bashrc
+   73  . ~/.bashrc 
+   74  docker-machine create -d virtualbox docker_test
+   75  docker-machine create -d virtualbox docker-test
+   76  docker ps
+   77  docker-machine
+   78* docker-machine 
+   79  docker-machine ls
+   80  docker-machine env docker-test
+   81  vi ~/.bashrc
+   82  ssh 172.20.20.15 2375
+   83  ssh admin@172.20.20.150 2375
+   84  dockerd
+   85  docker-machine ls
+   86  history 
+[root@pc4 admin]# 
+docker-machine ls
+docker-machine create -d virtualbox machine1
+docker-machine create -d virtualbox machine2
+
+[root@pc4 admin]# eval $(docker-machine env machine1)
+[root@pc4 admin]# docker info
+
+root@pc4 admin]# docker-machine ls
+NAME          ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER     ERRORS
+docker-test   -        virtualbox   Running   tcp://192.168.99.100:2376           v19.03.5   
+machine1      -        virtualbox   Running   tcp://192.168.99.103:2376           v19.03.5   
+machine2      *        virtualbox   Running   tcp://192.168.99.102:2376           v19.03.5   
+[root@pc4 admin]# docker-machine stop machine2
+Stopping "machine2"...
+Machine "machine2" was stopped.
+[root@pc4 admin]# 
+[root@pc4 admin]# 
+[root@pc4 admin]# docker-machine ls
+NAME          ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER     ERRORS
+docker-test   -        virtualbox   Running   tcp://192.168.99.100:2376           v19.03.5   
+machine1      -        virtualbox   Running   tcp://192.168.99.103:2376           v19.03.5   
+machine2      -        virtualbox   Stopped                                       Unknown    
+[root@pc4 admin]# 
+[root@pc4 admin]# 
+
+
+------------------------------------------
+docker run -d -p 80:80 --name httpd httpd:latest
+docker exec -it httpd /bin/bash
+
+
+125  docker info
+  126  docker ps
+  127  docker-machine ls
+  128  docker exec -it httpd /bin/bash
+  129  docker commit httpd
+  130  docker image
+  131  docker images
+  132  docker save ef7e3f926acb > httpd.tgz
+  133  docker exec -it httpd /bin/bash
+  134  docker commit httpd
+  135  docker-machine ps
+  136  docker-machine ls
+  137  docker images
+  138  docker save 32ec26c610c0 > httpd.tgz
+  139  docker stop httpd && docker rm -f $(docker ps -a |awk 'NR>1 {print $1}')
+  140  docker rmi $(docker images |awk 'NR>1 {print $1}')
+  141  docker rmi 
+  142  docker images
+  143  docker rmi --hemlp
+  144  docker rmi --help
+  145  docker rmi 32ec26c610c0
+  146  docker rmi ef7e3f926acbdocker run -d -p 80:8docker run -d -p 80:80 --name httpd httpd:latest
+docker exec -it httpd /bin/bash0 --name httpd httpd:latest
+docker exec -it httpd /bin/bash
+  147  docker images
+  148  docker load < httpd.tgz
+  149  docker images
+  150  docker run -d -p 80:80 --name httpd 32ec26c610c0
+  151  history
+[root@pc4 admin]# 
+
+
+***********************************************************
+***********************************************************
+HArbor Registry - https://goharbor.io/
+
+[admin@pc4 ~]$ docker-machidocker-machine create -d virtualbox testmachine1
+Running pre-create checks...
+Creating machine...docker-machine create -d virtualbox testmachine1 
+docker-machine ls 
+docker-machine ssh testmachine1 
+sudo su - 
+/etc/init.d/docker restart 
+exit 
+exit 
+(testmachine1) Copying /home/admin/.docker/machine/cache/boot2docker.iso to /home/admin/.docker/machine/machines/testmachine1/boot2docker.iso...
+(testmachine1) Creating VirtualBox VM...
+(testmachine1) Creating SSH key...
+(testmachine1) Starting the VM...
+(testmachine1) Check network to re-create if needed...
+(testmachine1) Waiting for an IP...
+Waiting for machine to be running, this may take a few minutes...
+Detecting operating system of created instance...
+Waiting for SSH to be available...
+Detecting the provisioner...
+Provisioning with boot2docker...
+Copying certs to the local machine directory...
+Copying certs to the remote machine...
+Setting Docker configuration on the remote daemon...
+Checking connection to Docker...
+Docker is up and running!
+To see how to connect your Docker Client to the Docker Engine running on this virtual machine, run: docker-machine env testmachine1
+[admin@pc4 ~]$ docker-machine ls
+NAME           ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER     ERRORS
+testmachine1   -        virtualbox   Running   tcp://192.168.99.100:2376           v19.03.5   
+[admin@pc4 ~]$ docker-machine ssh testmachine1
+   ( '>')
+  /) TC (\   Core is distributed with ABSOLUTELY NO WARRANTY.
+ (/-_--_-\)           www.tinycorelinux.net
+
+docker@testmachine1:~$ sudo su -
+root@testmachine1:~# vi /etc/docker/deamon.json
+root@testmachine1:~#                                                            
+root@testmachine1:~# systemctl restart docker
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            
+root@testmachine1:~# systemctl docker imagsrestart dockerdocker-machine create -d virtualbox testmachine1
+-bash: systemctl: command not found
+root@testmachine1:~#                                                            root@testmachine1:~#           
+root@testmachine1:~# /etc/init.d/docker restart
+Stopping dockerd (2618)
+Starting dockerddocker-machine ls
+root@testmachine1:~#                                                            root@testmachine1:~# exit      
+logout
+docker@testmachine1:~$                                                          docker@testmachine1:~$ exit    
+logout
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+[admin@pc4 ~]$ 
+\n\n\n\n\n\n
+docker-machine create -d virtualbox testmachine1 \n
+docker-machine ls \n
+docker-machine ssh testmachine1 \n
+sudo su - \n
+/etc/init.d/docker restart \n
+exit \n
+exit \n
+
+
+------------------------------------
+
+docker-machine create -d virtualbox testmachine1 
+docker-machine ls 
+docker-machine ssh testmachine1 
+sudo su - 
+vi /etc/hosts
+192.168.152.127 pc31
+
+root@testmachine1:~# cat /etc/docker/daemon.json                               
+{
+   "insecure-registries": ["192.168.152.127","pc31"]
+}
+
+:wq!
+
+/etc/init.d/docker restart 
+exit 
+exit 
+
+eval $(docker-machine env testmachine1)
+docker login -u Student -p Student123 http://192.168.152.127
+
+docker info
+docker login -u Student -p Student123 http://192.168.152.127
+docker run -d -p 80:80 --name httpd httpd:latest
+docker exec -it httpd /bin/bash
+echo "<h1> This is Test </h1>" > htdocs/index.html
+exit
+docker commit httpd
+docker images
+docker tag 0ac7f822eed1 192.168.152.127/digambar/httpd-custom:latest
+docker login -u Student -p Student123 http://192.168.152.127
+docker push 192.168.152.127/digambar/httpd-custom:latest
+
+docker start httpd #(if in case service is not started)
+docker ps -a
+docker images
+remove all containers and images
+
+
+docker rm -f $(docker ps -a | awk 'NR>1 {print $1}')
+
+  209  docker images
+  210  docker rmi 0ac7f822eed1
+  211  docker ps
+  212  docker rm 192.168.152.127/digambar/httpd-custom:latest
+  213  docker rm 192.168.152.127/digambar/httpd-custom
+  214  docker rm 3e9263f75e6c
+  215  docker stop 3e9263f75e6c
+  216  docker rm 3e9263f75e6c
+  217  docker images
+  218  docker rmi 0ac7f822eed1
+  219  docker rmi d4a061d58465
+  220  docker images
+  221  docker ps
+  222  docker ps -a
+  223  docker stop e9fcbfe10e12
+  224  dokcer rm e9fcbfe10e12
+  225  docker rm e9fcbfe10e12
+  226  docker ps -a
+  227  docker images
+  228  docker rmi 0ac7f822eed1
+  229  dokcer ps -a
+  230  docker ps -a
+  231  docker images
+  232  docker push -d -p 80:80 192.168.152.127/digambar/httpd-custom:latest
+  233  docker run -d -p 80:80 192.168.152.127/diga  209  docker images
+  210  docker rmi 0ac7f822eed1
+  211  docker ps
+  212  docker rm 192.168.152.127/digambar/httpd-custom:latest
+  213  docker rm 192.168.152.127/digambar/httpd-custom
+  214  docker rm 3e9263f75e6c
+  215  docker stop 3e9263f75e6c
+  216  docker rm 3e9263f75e6c
+  217  docker images
+  218  docker rmi 0ac7f822eed1
+  219  docker rmi d4a061d58465
+  220  docker images
+  221  docker ps
+  222  docker ps -a
+  223  docker stop e9fcbfe10e12
+  224  dokcer rm e9fcbfe10e12
+  225  docker rm e9fcbfe10e12
+  226  docker ps -a
+  227  docker images
+  228  docker rmi 0ac7f822eed1
+  229  dokcer ps -a
+  230  docker ps -a
+  231  docker images
+  232  docker push -d -p 80:80 192.168.152.127/digambar/httpd-custom:latest
+  233  docker run -d -p 80:80 192.168.152.127/digambar/httpd-custom:latest
+  234  docker ps -a
+  235  docker images
+mbar/httpd-custom:latest
+  234  docker ps -a
+  235  docker images
+
+docker run -d -p 80:80 192.168.152.127/digambar/httpd-custom:latest
+
+
+---------------------------------------
+
+  238  cd
+  239  pwd
+  240  mkdir -p project
+  241  cd project
+  242  vi Dockerfile
+  243  ls
+  244  cat Dockerfile 
+  245  vi index.html
+  246  cat index.html 
+  247  vi index.html  238  cd
+  239  pwd
+  240  mkdir -p project
+  241  cd project
+  242  vi Dockerfile
+  243  ls
+  244  cat Dockerfile 
+  245  vi index.html
+  246  cat index.html 
+  247  vi index.html
+  248  cat index.html 
+  249  docker ps -a
+  250  docker images
+  251  docket stop 0b7c2e4a50f3
+  252  docker stop 0b7c2e4a50f3
+  253  docker rm 0b7c2e4a50f3
+  254  docker images
+  255  docker rmi 0ac7f822eed1
+  256  docker images
+  257  docker ps -a
+  258  eval $(docker-machine env testmachine1)
+  259  docker build -t docker-centos7 .
+  260  docker tag docker-centos7:latest 192.168.152.127/digambar/centos-httpd:v4
+  261  docker push 192.168.152.127/digambar/centos7-httpd:v4
+  262  docker ps
+  263  docker images
+  264  docker push 192.168.152.127/digambar/centos-httpd:v4
+  265  docker run -d -p 80:80 --name testhttpd 192.168.152.127/digambar/centos-httpd:v4
+  266  docker images
+  267  docker ps
+  268  docker ps -a
+  269  dokcer stop 41d1f43f3d96
+  270  docker rm 41d1f43f3d96
+  271  docker stop 192.168.152.127/digambar/centos-httpd:v4
+  272  docker stop 41d1f43f3d96
+  273  docker rm 41d1f43f3d96
+  274  docker images
+  275  docker rmi 950e2770350b
+  276  docker ps -a
+  277  docker rmi -f 950e2770350b
+  278  docker images
+  279  docker rmi -f 5e35e350aded
+  280  docker images
+  281  docker ps -a
+  282  docker run -d -p 80:80 --name testhttpd 192.168.152.127/digambar/centos-httpd:v4
+  283  history
+  248  cat index.html 
+  249  docker ps -a
+  250  docker images
+  251  docket stop 0b7c2e4a50f3
+  252  docker stop 0b7c2e4a50f3
+  253  docker rm 0b7c2e4a50f3
+  254  docker images
+  255  docker rmi 0ac7f822eed1
+  256  docker images
+  257  docker ps -a
+  258  eval $(docker-machine env testmachine1)
+  259  docker build -t docker-centos7 .
+  260  docker tag docker-centos7:latest 192.168.152.127/digambar/centos-httpd:v4
+  261  docker push 192.168.152.127/digambar/centos7-httpd:v4
+  262  docker ps
+  263  docker images
+  264  docker push 192.168.152.127/digambar/centos-httpd:v4
+  265  docker run -d -p 80:80 --name testhttpd 192.168.152.127/digambar/centos-httpd:v4
+  266  docker images
+  267  docker ps
+  268  docker ps -a
+  269  dokcer stop 41d1f43f3d96
+  270  docker rm 41d1f43f3d96
+  271  docker stop 192.168.152.127/digambar/centos-httpd:v4
+  272  docker stop 41d1f43f3d96
+  273  docker rm 41d1f43f3d96
+  274  docker images
+  275  docker rmi 950e2770350b
+  276  docker ps -a
+  277  docker rmi -f 950e2770350b
+  278  docker images
+  279  docker rmi -f 5e35e350aded
+  280  docker images
+  281  docker ps -a
+  282  docker run -d -p 80:80 --name testhttpd 192.168.152.127/digambar/centos-httpd:v4
+  283  history
+
+admin@pc4 project]$ cat Dockerfile 
+FROM centos:centos7
+RUN yum update -y &&\
+    yum install httpd -y &&\
+    yum clean all
+ADD ./index.html /usr/share/httpd/noindex
+EXPOSE 80
+CMD ["apachectl", "-D", "FOREGROUND"]
+
+[admin@pc4 project]$ cat index.html 
+<h1> THIS IS A EXAMPLE VIA DOCKERFILE </h1>
+[admin@pc4 project]$ 
+
+
+
+CMD ["apachectl", "-D", "FOREGROUND"]
+
+[admin@pc4 project]$ cat index.html 
+<h1> THIS IS A EXAMPLE VIA DOCKERFILE </h1>
+[admin@pc4 project]$ 
+
+
