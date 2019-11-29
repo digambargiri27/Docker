@@ -40,40 +40,34 @@ docker ps -a |awk 'NR>1' {print $1})
 *************************************************
 FINAL COMMAND 
 
-  502  docker info
-  503  eval $(docker-machine env testmachine1)
-  504  docker-machine ls
-  505  docker-machine start testmachine1
-  506  eval $(docker-machine env testmachine1)
-  507  docker rm -f $(docker ps -a |awk 'NR>1 {print $1}')
-  508  docker images -a -f
-  509  docker images prune -a -f
-  510  docker image -a  -f
-  511  docker image prune -a  -f
-  512  mkdir -p ~/test
-  513  cd ~/test
-  514  sudo yum instal epel-release -y
-  515  sudo yum install epel-release -y
-  516  sudo yum install fuse-sshfs -y
-  517  docker-machine ssh testmachine1 -t 'mkdir -p ~/test'
-  518  ls /home/admin/test/
-  519  docker-machine mount testmachine1:/home/docker/test /home/admin/test
-  520  vi /home/admin/test/index.html
+    docker info
+    eval $(docker-machine env testmachine1)
+    docker-machine ls
+    docker-machine start testmachine1
+    eval $(docker-machine env testmachine1)
+    docker rm -f $(docker ps -a |awk 'NR>1 {print $1}')
+    docker image prune -a  -f
+    mkdir -p ~/test
+    cd ~/test
+    sudo yum install epel-release -y
+    sudo yum install fuse-sshfs -y
+    docker-machine ssh testmachine1 -t 'mkdir -p ~/test'
+    ls /home/admin/test/
+    docker-machine mount testmachine1:/home/docker/test /home/admin/test
+    vi /home/admin/test/index.html
   
   [admin@pc4 test]$ cat index.html 
 <h1> Hello !!! This is Docker mount Test !!! </h1>
 [admin@pc4 test]$ 
 
   
-  521  exit
-  522  eval $(docker-machine env testmachine1)
-  523  cd ~/test
-  524  ls
-  525  docker login -u Student -p Student http://192.168.152.127
-  526  docker login -u Student -p Student123 http://192.168.152.127
-  527  docker run -d -p 80:80 -v /home/docker/test:/usr/share/httpd/noindex --name testhttpd 192.168.152.127/digambar/centos7-httpd:v4
-  528  docker run -d -p 80:80 -v /home/docker/test:/usr/share/httpd/noindex --name testhttpd 192.168.152.127/digambar/centos7-https:v4
-  529  docker-machine ls
-  530  history
+    exit
+    eval $(docker-machine env testmachine1)
+    cd ~/test
+    ls
+    docker login -u Student -p Student123 http://192.168.152.127
+    docker run -d -p 80:80 -v /home/docker/test:/usr/share/httpd/noindex --name testhttpd 192.168.152.127/digambar/centos7-https:v4
+    docker-machine ls
+    history
 
 
