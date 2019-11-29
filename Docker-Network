@@ -4,5 +4,34 @@ In Kubernetes, an application can be deployed using a combination of pods, deplo
 Whereas, in Docker Swarm, applications can be deployed as services (or micro-services) in a Swarm cluster. Y
 AML files can be used to specify multi-container.
 
-RKT Docket
+Docker machine needs to be installed first.
+
+admin@pc4 ~]$ cat swarms.sh
+#!/bin/bash
+docker-machine create -d virtualbox --swarm --swarm-master master-0
+docker-machine ssh master-0 -t docker swarm init --advertise-addr $(docker-machine ip master-0)
+declare -a worker=(worker-0 worker-1)
+for((i=0;i<${#worker[@]};i++))
+do
+docker-machine create -d virtualbox --swarm ${worker[$i]}
+docker-machine ssh "${worker[$i]}" -t $(docker-machine ssh master-0 docker swarm join-token worker|awk 'NR>2'|grep -i docker)
+done
+eval $(docker-machine env master-0)
+[admin@pc4 ~]$ 
+
+chmod +x swarms.sh
+./swarms.sh
+
+[admin@pc4 ~]$ docker-machine ls
+NAME           ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER     ERRORS
+master-0       -        virtualbox   Running   tcp://192.168.99.101:2376           v19.03.5   
+testmachine1   *        virtualbox   Running   tcp://192.168.99.100:2376           v19.03.5   
+worker-0       -        virtualbox   Running   tcp://192.168.99.102:2376           v19.03.5   
+worker-1       -        virtualbox   Running   tcp://192.168.99.103:2376           v19.03.5   
+[admin@pc4 ~]$ 
+
+if you have something whihc is not required.
+docker-machine rm -f -y testmachine1
+
+
    
