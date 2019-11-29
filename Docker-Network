@@ -94,4 +94,4 @@ docker node ls
 
 docker service create --name httpd-custom --publish target=80,published=80 --network dockerlab 192.168.152.127/digambar/centos7-https:v4
 
-
+docker service create --name httpd-custom --publish target=80,published=80 --constraint "node.role==worker" --network dockerlab 192.168.152.127/digambar/centos07-https:v4
