@@ -33,5 +33,65 @@ worker-1       -        virtualbox   Running   tcp://192.168.99.103:2376        
 if you have something whihc is not required.
 docker-machine rm -f -y testmachine1
 
+eval $(docker-machine env master-0)
+docker ps
 
-   
+2 types of token - master tokcend and worker token
+docker swrm join-token worker
+run this token on worker - 
+
+manager network 
+
+docker network ls
+docker swarm 
+docker ps
+docker ps -a
+docker-machine ps
+docker-machine ls
+docker-machine ssh master-0
+docker@master-0:~$ vi /etc/docker/daemon.json
+{
+   "insecure-registries": ["192.168.152.127"]
+}
+sudo /etc/init.d/docker stop
+sudo /etc/init.d/docker start
+
+[admin@pc4 ~]$ docker-machine ssh worker-0
+sudo vi /etc/docker/daemon.json
+sudo /etc/init.d/docker stop                                
+sudo /etc/init.d/docker start                               
+
+
+docker@worker-0:~$ cat /etc/docker/daemon.json                                 
+{
+   "insecure-registries": ["192.168.152.127"]
+}
+docker-machine ssh worker-1
+sudo vi /etc/docker/daemon.json
+{
+   "insecure-registries": ["192.168.152.127"]
+}
+sudo /etc/init.d/docker stop                                
+sudo /etc/init.d/docker start  
+
+docker-machine ssh worker-0
+docker-machine ssh worker-1
+eval $(docker-machine env master-0)
+docker network create -d overlay dockerlab
+docker network ls
+docker login -u Student -p Student http://192.168.152.127
+docker login -u Student -p Student123 http://192.168.152.127
+docker run -d -p 80:80 --network dockerlab --name testhttpd 192.168.152.127/digambar/centos7-https:v4
+docker info
+eval $(docker-machine env  worker-0)
+docker info
+docker 
+docker network ls
+eval $(docker-machine env master-0)
+docker node ls
+
+
+
+docker service create --name httpd-custom --publish target=80,published=80 --network dockerlab 192.168.152.127/digambar/centos7-https:v4
+
+
